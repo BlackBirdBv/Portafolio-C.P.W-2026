@@ -1,5 +1,9 @@
 /*css/estilos.css*/
 /* Reset basico */
+/* 100% del tamaño indica que el usuario configuró por omision son 16px */
+html{
+    font-size: 100%;
+}
 
 *{
     margin: 0;
@@ -7,94 +11,152 @@
     box-sizing: border-box;
 }/*esta regla elimina los margenes y el relleno predeterminado de todos los elementos y establece el modelo de caja para incluir el relleno y el borde del ancho y alto del elemento*/
 body{
+    font-size: 1rem;
+    line-height: 1.6;
     font-family: arial, sans-serif;
-    color: #a8a7a7;
-    background-color: #e2e2e21f;
+    color: #333;
+    background-color: #fcfcfc;
 }/* esta regla define la fuente y color del texto en wl documnto */
 
 /* titulo pricipal */
+
 h1{
     color: #ffffff;
-    font-size: 32px;
     text-align: center;
 }
 
-/* sub titulos */
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
 h2{
-    color: #3f72a1;
-    font-size: 24px;
-    text-align: center;
-    margin: 10px 0;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 h3{
-    color: #74abdf;
-    text-align: center;
-    margin: 10px 0;
+    font-size: 1.5rem;
+    font-weight: 600;
 }
 
 p{
-    color: #797878;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+header{
+    background-color: #1f4e79;
+    color: white;
+}
+
+/* header modificacion de p ("Sitio de demostración del módulo CSTI12002") */
+header p{
     text-align: center;
 }
 
-li{
-    margin: 10px; 
+footer{
+    background-color: #dce6f1;
+    padding: 200px;
+    margin-top: 32px;
+}
+
+.portada-texto{
+    background-color: rgba(0, 40, 0, 0.35);
+    padding: 24px;
+    border-radius: 8px;
+}
+
+h2, h3{
+    color: #1f4e79;
+}
+
+h3{
+    border-bottom: 3px solid #1f4e79;
+}
+
+/* estilos de subtitulos */
+
+.menu-anclas h2, article h2{
+    background-color: #1f4e79;
+    color: #ffffff;
+    padding: 15px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+/* estilos de aside de recordatorio */
+
+.recordatorio{
+    margin: 20px 0;
+}
+
+.recordatorio h2{
+    color: #ffffff;
+    padding: 0 20px;
+    margin: 0 50px;
+    text-align: center;
+}
+
+.recordatorio p{
+    color: #ffffff;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.recordatorio p a{
+    color: #ffffff;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+.recordatorio p a:hover{
+    color: #92c0db;
+}
+
+/* fin estilos de aside de recordatorio */
+
+
+main p{
+    max-width: 70ch;
+}/*ch es el ancho de caracter 0 de la fuente en uso tambien el valor 70 marca el rango de lectura que llaman comoda por linea */
+
+main a{
+    text-decoration: none;
+    border-bottom: 1px solid #1f4e79;
+}
+
+blockquote p{
+    font-style: italic;
+    color: #555;
+}
+
+/* Tranformacion y espacio */
+
+header nav a{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-decoration: none;
 }
 
 /* Aplicar estilos a clases */
 .destacado{
-    color: #fff3cd;
+    color: black;
     padding: 10px;
 }
 
 /* Aplicar estilos a identificadores o IDs */
 
 #inicio{
-    background-color:#3f72a1;
+    background-image: url(../recursos/fondo.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     padding: 30px;
 }
 
-/* Estilos solo enlaces dentro del nav */
-nav a{
-    /* background-color: #fff; */
-    margin-right: 15px;
-    transition: color 0.3s;
-}
-
-/* psuedo-clase :hover */
-nav a:hover{
-    color: #f8cbad;
-}
-
-/* Pseudo-class : nth-child: fila cebra en la tabla */
-tbody tr:nth-child(even){
-    background-color: #bd9c9c;
-}
-
-article p:first-letter{
-    font-size: 32px;
-    font-weight: bold;
-    color: #c55a11;
-}
-
-::selection{
-    background-color: #1f4e79;
-    color: white;
-}
-
-/* Aagragarr famila de fuentes traida de goofle fonts */
-body{
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-}
-
-/* Actividad de comprobacion S12 */
-
-.recordatorio{
-    background-color: #1f4e79;
-    padding: 10px;
-}
+/* corecciones al header id */
 
 #inicio{
     background-color: #003363;
@@ -115,14 +177,88 @@ body{
     text-decoration: none;
 }
 
+
+
+/* Estilos solo enlaces dentro del nav */
+nav a{
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+/* psuedo-clase :hover */
+nav a:hover{
+    color: #f8cbad;
+}
+
+/* Pseudo-class : nth-child: fila cebra en la tabla */
+tbody tr:nth-child(even){
+    background-color: #bd9c9c;
+}
+
+article p:first-letter{
+    font-size: 20px;
+    font-weight: bold;
+    color: #474747;
+}
+
+::selection{
+    background-color: #1f4e79;
+    color: white;
+}
+
+/* Aagragarr famila de fuentes traida de goofle fonts */
+body{
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+}
+
+/* Actividad de comprobacion S12 */
+
+.recordatorio{
+    background-color: #1f4e79;
+    padding: 10px;
+}
+
 tbody tr:nth-child(even){
     background-color: #dff9fd;
 }
 
-article p:first-letter{
-    font-size: 24px;
-    font-weight: bold;
-    color: #686868;
+.menu-anclas ul{
+    margin-left: 20px;
+    list-style: none;
 }
 
+article section{
+    margin: 0 20px;
+}
+
+/* posicion unidades */
+
+#unidades ol{
+    margin-left: 40px;
+}
+
+/* link unidades */
+
+#unidades p a{
+    color: #1f4e79;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+#unidades p a:hover{
+    color: #92c0db;
+}
+
+/* link evaluacion */
+
+#evaluacion p a{
+    color: #1f4e79;
+    font-weight: 700;
+    transition: 0.3s ease-in-out;
+}
+
+#evaluacion p a:hover{
+    color: #92c0db;
+}
 
