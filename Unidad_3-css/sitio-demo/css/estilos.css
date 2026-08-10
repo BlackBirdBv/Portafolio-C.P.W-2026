@@ -22,17 +22,41 @@ body{
 }/* esta regla define la fuente y color del texto en wl documnto */
 
 /* titulo pricipal */
+
 h1{
     color: #ffffff;
-    font-size: 32px;
     text-align: center;
 }
 
-/* sub titulos */
+h1{
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
 h2{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+main p{
+    max-width: 70ch;
+}/*ch es el ancho de caracter 0 de la fuente en uso tambien el valor 70 marca el rango de lectura que llaman comoda por linea */
+
+/* sub titulos */
+/* h2{
     color: #3f72a1;
     font-size: 24px;
-    text-align: center;
+    
     margin: 10px 0;
 }
 
@@ -49,7 +73,7 @@ p{
 
 li{
     margin: 10px; 
-}
+} */
 
 /* Aplicar estilos a clases */
 .destacado{
