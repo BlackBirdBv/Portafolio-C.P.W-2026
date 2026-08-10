@@ -10,15 +10,14 @@ html{
 *{
     margin: 0;
     padding: 0;
-
     box-sizing: border-box;
 }/*esta regla elimina los margenes y el relleno predeterminado de todos los elementos y establece el modelo de caja para incluir el relleno y el borde del ancho y alto del elemento*/
 body{
     font-size: 1rem;
     line-height: 1.6;
     font-family: arial, sans-serif;
-    color: #a8a7a7;
-    background-color: #e2e2e21f;
+    color: #333;
+    background-color: #fcfcfc;
 }/* esta regla define la fuente y color del texto en wl documnto */
 
 /* titulo pricipal */
@@ -48,9 +47,43 @@ p{
     font-weight: 400;
 }
 
+header{
+    background-color: #1f4e79;
+    color: white;
+}
+
+footer{
+    background-color: #dce6f1;
+    padding: 200px;
+    margin-top: 32px;
+}
+
+h2, h3{
+    color: #1f4e79;
+}
+
 main p{
     max-width: 70ch;
 }/*ch es el ancho de caracter 0 de la fuente en uso tambien el valor 70 marca el rango de lectura que llaman comoda por linea */
+
+main a{
+    text-decoration: none;
+    border-bottom: 1px solid #1f4e79;
+}
+
+blockquote p{
+    font-style: italic;
+    color: #555;
+}
+
+/* Tranformacion y espacio */
+
+header nav a{
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    text-decoration: none;
+}
 
 /* sub titulos */
 /* h2{
