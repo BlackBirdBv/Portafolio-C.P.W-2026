@@ -70,11 +70,11 @@ Portafolio-Codificación de Páginas Web/
 <details markdown="1">
 <summary><b>Unidad 3 · Codificación de hojas de estilo</b> (sesiones 11 a 20)</summary>
 
-| Sesión | Tema                       |                            Qué aprendí                              |                     Trabajo                    |          Captura        |
-| :----: | :------------------------- | :------------------------------------------------------------------ | :--------------------------------------------: | :---------------------: |
-|  S11   | Introducción a CSS         | introduccion de css (reglas y configuraciones)                      | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S11.png) |
-|  S12   | Selectores y pseudo-clases | Uso y aplicacion de selectores, pseudo-clases y links de tipografias| [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S12.png) |
-|  S13   | Tipografía y color         |             | [ver](Unidad_3-css) | [ver](recursos/) |
+| Sesión | Tema                       |                                Qué aprendí                                   |                     Trabajo                    |          Captura        |
+| :----: | :------------------------- | :--------------------------------------------------------------------------- | :--------------------------------------------: | :---------------------: |
+|  S11   | Introducción a CSS         | introduccion de css (reglas y configuraciones)                               | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S11.png) |
+|  S12   | Selectores y pseudo-clases | Uso y aplicacion de selectores, pseudo-clases y links de tipografias         | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S12.png) |
+|  S13   | Tipografía y color         | Tipografia, color y fondos: uso, aplicacionciones y medidas para paginas web | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S13.png) |
 |  S14   | Modelo de cajas            |             | [ver](Unidad_3-css) | [ver](recursos/) |
 |  S15   | Display y posicionamiento  |             | [ver](Unidad_3-css) | [ver](recursos/) |
 |  S16   | Flexbox                    |             | [ver](Unidad_3-css) | [ver](recursos/) |
