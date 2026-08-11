@@ -18,11 +18,14 @@ body{
     color: #333;
     background-color: #fcfcfc;
 }/* esta regla define la fuente y color del texto en wl documnto */
-
-main{
-    max-width: 1000px;
+.contenedor{
+    max-width: 1200px;
     margin: 0 auto;
     /* 0 aplica a la parte vertical y horizontal el auto: reparte el estacio adicional por ambos lados lo cenra en un elemento con ancho limitado  */
+}
+
+main{
+    
 }
 
 /* titulo pricipal */
@@ -100,6 +103,12 @@ header nav a{
     letter-spacing: 1px;
     font-size: 0.9rem;
     text-decoration: none;
+    display: inline-block;
+    padding: 10px 15px;
+}
+
+header nav ul{
+    list-style: none;
 }
 
 /* Aplicar estilos a clases */
@@ -130,22 +139,6 @@ nav a:hover{
     color: #f8cbad;
 }
 
-/* Pseudo-class : nth-child: fila cebra en la tabla */
-tbody tr:nth-child(even){
-    background-color: #bd9c9c;
-}
-
-article p:first-letter{
-    font-size: 20px;
-    font-weight: bold;
-    color: #474747;
-}
-
-::selection{
-    background-color: #1f4e79;
-    color: white;
-}
-
 aside{
     padding: 20px;
     border: 2px solid #c55a11;
@@ -165,8 +158,70 @@ padding-left 10px izquierda*/
 /* aplica a la tabla horarios.html */
 th, td{
     padding: 10px;
+    border: 1px solid #dddddd;
+    text-align: left;
+}
+
+thead th{
+    background-color: #1f4e79;
+    color: white;
+}
+
+tfoot td{
+    padding: 12px;
+    font-style: italic;
+    background-color: #f5f7fa;
 }
 
 fieldset{
     padding: 16px;
+}
+
+/* Pseudo-class : nth-child: fila cebra en la tabla */
+tbody tr:nth-child(even){
+    background-color: #eec8c8;
+}
+
+article p:first-letter{
+    font-size: 20px;
+    font-weight: bold;
+    color: #474747;
+}
+
+::selection{
+    background-color: #1f4e79;
+    color: white;
+}
+
+/* Lstas de horario.html */
+main li,  main ol{
+    padding-left: 24px;
+    margin-bottom: 16px;
+}
+
+main li{
+    margin-bottom: 6px;
+}
+
+#glosario dt{
+    font-weight: 700;
+    margin-top: 12px;
+}
+
+#glosario dd{
+    margin-left: 20px;
+    margin-top: 8px;
+}/* la sangria de <dd> es lo que hace visible la relacion entre el termino y su descripcion */
+
+/* la tabla de calendaio */
+table{
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 24px;
+}
+
+caption{
+    padding: 8px;
+    font-weight: 700;
+    margin-bottom: 24px;
 }
