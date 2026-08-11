@@ -10,6 +10,7 @@ html{
     padding: 0;
     box-sizing: border-box;
 }/*esta regla elimina los margenes y el relleno predeterminado de todos los elementos y establece el modelo de caja para incluir el relleno y el borde del ancho y alto del elemento*/
+
 body{
     font-size: 1rem;
     line-height: 1.6;
@@ -71,52 +72,6 @@ h2, h3{
     color: #1f4e79;
 }
 
-h3{
-    border-bottom: 3px solid #1f4e79;
-}
-
-/* estilos de subtitulos */
-
-.menu-anclas h2, article h2{
-    background-color: #1f4e79;
-    color: #ffffff;
-    padding: 15px;
-    border-radius: 20px;
-    margin: 10px;
-}
-
-/* estilos de aside de recordatorio */
-
-.recordatorio{
-    margin: 20px 0;
-}
-
-.recordatorio h2{
-    color: #ffffff;
-    padding: 0 20px;
-    margin: 0 50px;
-    text-align: center;
-}
-
-.recordatorio p{
-    color: #ffffff;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.recordatorio p a{
-    color: #ffffff;
-    font-weight: 700;
-    transition: 0.3s ease-in-out;
-}
-
-.recordatorio p a:hover{
-    color: #92c0db;
-}
-
-/* fin estilos de aside de recordatorio */
-
-
 main p{
     max-width: 70ch;
 }/*ch es el ancho de caracter 0 de la fuente en uso tambien el valor 70 marca el rango de lectura que llaman comoda por linea */
@@ -143,7 +98,8 @@ header nav a{
 /* Aplicar estilos a clases */
 .destacado{
     color: black;
-    padding: 10px;
+    padding: 10px 20px;
+
 }
 
 /* Aplicar estilos a identificadores o IDs */
@@ -155,29 +111,6 @@ header nav a{
     background-repeat: no-repeat;
     padding: 30px;
 }
-
-/* corecciones al header id */
-
-#inicio{
-    background-color: #003363;
-}
-
-#inicio nav li{
-    list-style: none;
-}
-
-#inicio nav a{
-    color: #ffffff;
-    text-decoration: none;
-    transition: 0.5s;
-}
-
-#inicio nav a:hover{
-    color: #92c0db;
-    text-decoration: none;
-}
-
-
 
 /* Estilos solo enlaces dentro del nav */
 nav a{
@@ -206,59 +139,27 @@ article p:first-letter{
     color: white;
 }
 
-/* Aagragarr famila de fuentes traida de goofle fonts */
-body{
-    font-family: "Poppins", Arial, Helvetica, sans-serif;
-    line-height: 1.6;
+aside{
+    padding: 20px;
+    border: 2px solid #c55a11;
+    border-radius: 8px;
 }
+/* En este caso el padding aplica a los 4 lados a la vez 
+padding: 10px 20px aplica vertical y horizontal 
+padding: 10px 20px 15px 5px aplica en los 4 lados valores distintos 
+En el sentido de las manesillas del reloj*/
 
-/* Actividad de comprobacion S12 */
+/* Aplicar lado por lado
+padding-top 10px arriba 
+padding-rigth 10px derecha
+padding-bottom 10px abajo
+padding-left 10px izquierda*/
 
-.recordatorio{
-    background-color: #1f4e79;
+/* aplica a la tabla horarios.html */
+th, td{
     padding: 10px;
 }
 
-tbody tr:nth-child(even){
-    background-color: #dff9fd;
+fieldset{
+    padding: 16px;
 }
-
-.menu-anclas ul{
-    margin-left: 20px;
-    list-style: none;
-}
-
-article section{
-    margin: 0 20px;
-}
-
-/* posicion unidades */
-
-#unidades ol{
-    margin-left: 40px;
-}
-
-/* link unidades */
-
-#unidades p a{
-    color: #1f4e79;
-    font-weight: 700;
-    transition: 0.3s ease-in-out;
-}
-
-#unidades p a:hover{
-    color: #92c0db;
-}
-
-/* link evaluacion */
-
-#evaluacion p a{
-    color: #1f4e79;
-    font-weight: 700;
-    transition: 0.3s ease-in-out;
-}
-
-#evaluacion p a:hover{
-    color: #92c0db;
-}
-
