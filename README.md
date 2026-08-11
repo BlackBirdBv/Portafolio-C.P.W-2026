@@ -75,8 +75,8 @@ Portafolio-Codificación de Páginas Web/
 |  S11   | Introducción a CSS         | introduccion de css (reglas y configuraciones)                               | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S11.png) |
 |  S12   | Selectores y pseudo-clases | Uso y aplicacion de selectores, pseudo-clases y links de tipografias         | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S12.png) |
 |  S13   | Tipografía y color         | Tipografia, color y fondos: uso, aplicacionciones y medidas para paginas web | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S13.png) |
-|  S14   | Modelo de cajas            |             | [ver](Unidad_3-css) | [ver](recursos/) |
-|  S15   | Display y posicionamiento  |             | [ver](Unidad_3-css) | [ver](recursos/) |
+|  S14   | Modelo de cajas            | Medidas, usos, posiciones y funcionamiento                                   | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S14.png) |
+|  S15   | Display y posicionamiento  | Aplcacion funciones y usos                                                   | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S15.png) |
 |  S16   | Flexbox                    |             | [ver](Unidad_3-css) | [ver](recursos/) |
 |  S17   | CSS Grid                   |             | [ver](Unidad_3-css) | [ver](recursos/) |
 |  S18   | Componentes estilizados    |             | [ver](Unidad_3-css) | [ver](recursos/) |
