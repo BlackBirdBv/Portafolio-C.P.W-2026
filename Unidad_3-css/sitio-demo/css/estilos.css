@@ -24,10 +24,6 @@ body{
     /* 0 aplica a la parte vertical y horizontal el auto: reparte el estacio adicional por ambos lados lo cenra en un elemento con ancho limitado  */
 }
 
-main{
-    
-}
-
 /* titulo pricipal */
 
 h1{
@@ -99,16 +95,28 @@ blockquote p{
 /* Tranformacion y espacio */
 
 header nav a{
+    color: #ffffff;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-size: 0.9rem;
     text-decoration: none;
-    display: inline-block;
     padding: 10px 15px;
 }
 
 header nav ul{
-    list-style: none;
+    list-style-type: none;
+}
+
+nav li{
+    margin-right: 15px;
+}
+
+header nav li{
+    display: inline-block;
+}
+
+main nav{
+    display: none;
 }
 
 /* Aplicar estilos a clases */
@@ -177,22 +185,6 @@ fieldset{
     padding: 16px;
 }
 
-/* Pseudo-class : nth-child: fila cebra en la tabla */
-tbody tr:nth-child(even){
-    background-color: #eec8c8;
-}
-
-article p:first-letter{
-    font-size: 20px;
-    font-weight: bold;
-    color: #474747;
-}
-
-::selection{
-    background-color: #1f4e79;
-    color: white;
-}
-
 /* Lstas de horario.html */
 main li,  main ol{
     padding-left: 24px;
@@ -225,3 +217,29 @@ caption{
     font-weight: 700;
     margin-bottom: 24px;
 }
+
+
+/* Pseudo-class : nth-child: fila cebra en la tabla */
+tbody tr:nth-child(even){
+    background-color: #eec8c8;
+}
+
+article p:first-letter{
+    font-size: 20px;
+    font-weight: bold;
+    color: #474747;
+}
+
+::selection{
+    background-color: #1f4e79;
+    color: white;
+}
+
+/* Los 5 valores de position 
+static: el valor por omision
+relative: se desplaza desde su propia posicion, conserva su propia posicion y los elementos vecinos no se muenven. 
+absolute: se ubica respecto al ancestro mas cercano.
+fixed: se ubica respecto a la ventana. no se mueve al desplazarse.
+sticky: fluye normal hasta llegar a un umbral, y entonces se pega*/
+
+/* patron para este caso */
