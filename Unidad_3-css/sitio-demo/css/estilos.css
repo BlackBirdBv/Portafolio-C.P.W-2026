@@ -272,7 +272,13 @@ sticky: fluye normal hasta llegar a un umbral, y entonces se pega*/
     color: white;
     border-radius: 4px;
     font-size: 0.875rem;
+    z-index: 10;
 }
+/* z-index SOLO FUNCIONA en elemnetos con positions declarado si el es stactic no funciona.
+escala de valores de z-index 10 para elementos posicionados dentro del contenido.
+100 la cabecera fija 
+1000 ventanas emergentes y capas superpuestas 
+9999 maximo valor z-index*/
 
 
 
