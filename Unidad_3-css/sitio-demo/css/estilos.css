@@ -253,7 +253,7 @@ sticky: fluye normal hasta llegar a un umbral, y entonces se pega*/
     position: relative;
 }
 
-/* .etiqueta{
+.etiqueta{
     position: absolute;
     top: 20px;
     right: 20px;
@@ -261,7 +261,7 @@ sticky: fluye normal hasta llegar a un umbral, y entonces se pega*/
     color: white;
     border-radius: 4px;
     font-size: 0.875rem;
-} */
+}
 
 
 
