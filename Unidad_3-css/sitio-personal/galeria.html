@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- METADATOS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cardenas_kev">
+    <meta name="description" content="Sitio web de una tienda de cafe">
+    <meta name=" keywords" content="Cafe, Expresso, Blog, ">
+
+    <title>Galeria | CafeTico</title>
+
+    <link rel="icon" href="resources/Logo/cafe.png">
+</head>
+<body>
+    <!-- CABECERA -->
+    <header>
+        <nav style="display: flex; justify-content: space-between;">
+            <svg xmlns="http://w3.org" viewBox="0 0 100 100" width="75" height="75">
+                <!-- Cuerpo principal del grano de café -->
+                <ellipse cx="50" cy="50" rx="35" ry="25" fill="#6F4E37" transform="rotate(-25 50 50)" />
+                <!-- Línea o corte central con efecto de profundidad -->
+                <path d="M 32 38 Q 50 55 68 62" stroke="#4A3319" stroke-width="4" fill="none" stroke-linecap="round" />
+            </svg>
+
+            <ul style="display: flex; list-style: none; ">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">&nbsp; Galeria</a></li>
+                <li><a href="ubicacion.html">&nbsp; Ubicados</a></li>
+                <li><a href="BuscaEmpleo.html">&nbsp; Solicitud de Empleo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <article>
+            <h1>Conocenos</h1>
+
+            <h2>video local</h2>
+            <video controls>
+                <source src="resources/videos/cafeteria.mp4" type="video/mp4">
+                <source src="resources/videos/cafeteria.webm" type="video/webm">
+                <p>Tu navegador no soporta el elemneto de audio</p>
+                <a href="resources/videos/cafeteria.mp4">Descargar el archivo</a>
+            </video>
+        </article>
+
+        <article>
+            <h2>Imagenes</h2>
+
+            <div style="display: flex;">
+                <figure>
+                    <picture>
+                        <source srcset="resources/img/local.png" type="image/png">
+                        <source srcset="resources/img/local.webp" type="image/webp">
+                        <img srcset="resources/img/local.png" alt="mesas y sillas y facilidades del local" height="300">
+                    </picture>
+                    <figcaption style="font-size: 30px;">Local</figcaption>
+                </figure>
+                    
+                <figure>
+                    <picture>
+                        <source srcset="resources/img/menu.png" type="image/png">
+                        <source srcset="resources/img/menu.webp" type="image/webp">
+                        <img srcset="resources/img/menu.png" alt="Hoja con el menu del local" height="300">
+                    </picture>
+                    <figcaption style="font-size: 30px;">Menu</figcaption>
+                </figure>
+                
+                <figure>
+                    <picture>
+                        <source srcset="resources/img/vitrina.png" type="image/png">
+                        <source srcset="resources/img/vitrina.webp" type="image/webp">
+                        <img srcset="resources/img/vitrina.png" alt="Camara de fio y de calor con productos de reposteria" height="300">
+                    </picture>
+                    <figcaption style="font-size: 30px;">Productos</figcaption>
+                </figure>
+                    
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <h2>Contacto</h2>
+        <address>
+            Cafeteria CafeTico<br>
+            Reservaciones al:<br>
+            Correo: <a href="mailto:CafeTico506@gmail.com">CafeTico506@gmail.com</a>
+        </address>
+        
+        <p><small>&copy; 2026 &middot; CafeTico &middot; Todos los derechos reservados</small></p>
+    </footer>
+</body>
+</html>
