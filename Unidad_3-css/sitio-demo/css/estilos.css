@@ -17,6 +17,7 @@ body{
     font-family: arial, sans-serif;
     color: #333;
     background-color: #fcfcfc;
+    padding: 180px;
 }/* esta regla define la fuente y color del texto en wl documnto */
 .contenedor{
     max-width: 1200px;
@@ -129,12 +130,22 @@ main nav{
 /* Aplicar estilos a identificadores o IDs */
 
 #inicio{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     background-image: url(../recursos/fondo.avif);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     padding: 30px;
 }
+
+/* #inicio{
+    position: sticky; fluye normal y se pega al llegar arriba
+    top: 0;
+} */
+
 
 /* Estilos solo enlaces dentro del nav */
 nav a{
