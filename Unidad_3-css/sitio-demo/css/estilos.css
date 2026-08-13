@@ -94,6 +94,26 @@ blockquote p{
 }
 
 /* Tranformacion y espacio */
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;/*separacion uniforme entre elementos*/
+    /* justify-content: flex-start; coloca los elementos al inicio de la fila
+    justify-content: flex-end; coloca los elementos al final de la fila 
+    justify-content: center; coloca los elementos en el centro 
+    justify-content: space-between; 
+    justify-content: space-evenly; */
+    justify-content: space-around;
+}
+
+nav li{
+    margin-right: 15px;
+}
+
+/* header nav li{
+    display: inline-block;
+    margin-right: 15px;
+} */
 
 header nav a{
     color: #ffffff;
@@ -102,18 +122,6 @@ header nav a{
     font-size: 0.9rem;
     text-decoration: none;
     padding: 10px 15px;
-}
-
-header nav ul{
-    list-style-type: none;
-}
-
-nav li{
-    margin-right: 15px;
-}
-
-header nav li{
-    display: inline-block;
 }
 
 main nav{
@@ -130,6 +138,9 @@ main nav{
 /* Aplicar estilos a identificadores o IDs */
 
 #inicio{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     position: fixed;
     top: 0;
     left: 0;
@@ -138,7 +149,8 @@ main nav{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 30px;
+    padding: 12px;
+    z-index: 100;
 }
 
 /* #inicio{
