@@ -64,6 +64,11 @@ header p{
 }
 
 footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
     background-color: #dce6f1;
     padding: 200px;
     margin-top: 32px;
@@ -94,6 +99,30 @@ blockquote p{
 }
 
 /* Tranformacion y espacio */
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    gap: 50px;/*separacion uniforme entre elementos*/
+    /* justify-content: flex-start; coloca los elementos al inicio de la fila
+    justify-content: flex-end; coloca los elementos al final de la fila 
+    justify-content: center; coloca los elementos en el centro 
+    justify-content: space-between; 
+    justify-content: space-evenly; */
+    justify-content: space-around;
+}
+
+nav li{
+    margin-right: 15px;
+}
+
+/* header nav li{
+    display: inline-block;
+    margin-right: 15px;
+} */
+
+header{
+    align-self:center; /* center; anula align-items para el elemnto */
+}
 
 header nav a{
     color: #ffffff;
@@ -102,18 +131,6 @@ header nav a{
     font-size: 0.9rem;
     text-decoration: none;
     padding: 10px 15px;
-}
-
-header nav ul{
-    list-style-type: none;
-}
-
-nav li{
-    margin-right: 15px;
-}
-
-header nav li{
-    display: inline-block;
 }
 
 main nav{
@@ -130,6 +147,12 @@ main nav{
 /* Aplicar estilos a identificadores o IDs */
 
 #inicio{
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; acomoda al centro 
+    align-items: flex-start; acomoda al arriba 
+    align-items: flex-end; acomoda al abajo  */
+    align-items: baseline; /* fija con respecto la ventana  */
     position: fixed;
     top: 0;
     left: 0;
@@ -138,7 +161,8 @@ main nav{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 30px;
+    padding: 12px;
+    z-index: 100;
 }
 
 /* #inicio{
@@ -280,5 +304,28 @@ escala de valores de z-index 10 para elementos posicionados dentro del contenido
 1000 ventanas emergentes y capas superpuestas 
 9999 maximo valor z-index*/
 
+.centrado{
+    display: flex;
+    justify-content: center;/*centrado horizontal*/
+    align-items: center;/*centrado vertical*/
+}
 
+.filas-tarjetas{
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex-grow: 1;/* cuando crece si sobre espacio .0 no crece */
+    flex-shrink: 1;/*cuando encoge si sobre espacio .0 no se encoge*/
+    flex-basis: 0;
+}
 
+.tarjetas{
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
