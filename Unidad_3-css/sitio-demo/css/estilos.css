@@ -115,6 +115,10 @@ nav li{
     margin-right: 15px;
 } */
 
+header{
+    align-self:center; /* center; anula align-items para el elemnto */
+}
+
 header nav a{
     color: #ffffff;
     text-transform: uppercase;
@@ -140,7 +144,10 @@ main nav{
 #inicio{
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; acomoda al centro 
+    align-items: flex-start; acomoda al arriba 
+    align-items: flex-end; acomoda al abajo  */
+    align-items: baseline; /* fija con respecto la ventana  */
     position: fixed;
     top: 0;
     left: 0;
@@ -152,6 +159,8 @@ main nav{
     padding: 12px;
     z-index: 100;
 }
+
+
 
 /* #inicio{
     position: sticky; fluye normal y se pega al llegar arriba
