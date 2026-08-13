@@ -64,6 +64,11 @@ header p{
 }
 
 footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
     background-color: #dce6f1;
     padding: 200px;
     margin-top: 32px;
@@ -159,8 +164,6 @@ main nav{
     padding: 12px;
     z-index: 100;
 }
-
-
 
 /* #inicio{
     position: sticky; fluye normal y se pega al llegar arriba
@@ -301,5 +304,28 @@ escala de valores de z-index 10 para elementos posicionados dentro del contenido
 1000 ventanas emergentes y capas superpuestas 
 9999 maximo valor z-index*/
 
+.centrado{
+    display: flex;
+    justify-content: center;/*centrado horizontal*/
+    align-items: center;/*centrado vertical*/
+}
 
+.filas-tarjetas{
+    display: flex;
+    gap: 20px;
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    flex-grow: 1;/* cuando crece si sobre espacio .0 no crece */
+    flex-shrink: 1;/*cuando encoge si sobre espacio .0 no se encoge*/
+    flex-basis: 0;
+}
 
+.tarjetas{
+    display: flex;
+    flex: 1;
+    gap: 20px;
+    flex-wrap: wrap;
+
+}
