@@ -77,7 +77,7 @@ Portafolio-Codificación de Páginas Web/
 |  S13   | Tipografía y color         | Tipografia, color y fondos: uso, aplicacionciones y medidas para paginas web | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S13.png) |
 |  S14   | Modelo de cajas            | Medidas, usos, posiciones y funcionamiento                                   | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S14.png) |
 |  S15   | Display y posicionamiento  | Aplcacion funciones y usos                                                   | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S15.png) |
-|  S16   | Flexbox                    |             | [ver](Unidad_3-css) | [ver](recursos/) |
+|  S16   | Flexbox                    | Aplicacion y uso en los contenedores propiedades, etc                        | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S16.png) |
 |  S17   | CSS Grid                   |             | [ver](Unidad_3-css) | [ver](recursos/) |
 |  S18   | Componentes estilizados    |             | [ver](Unidad_3-css) | [ver](recursos/) |
 |  S19   | Animaciones y filtros      |             | [ver](Unidad_3-css) | [ver](recursos/) |
