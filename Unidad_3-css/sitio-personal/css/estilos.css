@@ -1,0 +1,59 @@
+/* reset */
+html{
+    font-size: 100%;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* configuraciones generales del sitio */
+body{
+    font-family: "Rubik", sans-serif;
+    max-width: 1200px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+header{
+    background-color: #623307;
+    padding: 10px 20px;
+}
+
+header nav ul{
+    text-align: center;
+}
+
+header nav ul li{
+    display: inline;
+}
+
+header nav ul li a{
+    color: white;
+    font-size: 20px;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+header nav ul li a:hover{
+    color: #da6900;
+}
+
+/* configuraciones de titulos */
+
+h1{
+    font-size: 40px;
+}
+
+h2{
+    font-size: 26px;
+}
+
+h3{
+    font-size: 16px;
+}
+
+
