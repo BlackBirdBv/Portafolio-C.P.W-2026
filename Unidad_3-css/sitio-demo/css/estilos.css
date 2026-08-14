@@ -351,7 +351,7 @@ escala de valores de z-index 10 para elementos posicionados dentro del contenido
 
 /* con filas  */
 
-.galeria-grid figure:first-of-type{
+.destacada{
     grid-column: span 2; /*abarca dos filas*/
 }
 
@@ -372,3 +372,9 @@ escala de valores de z-index 10 para elementos posicionados dentro del contenido
 }
 
 /* que las imagenes no se deformen */
+.galeria-grid img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
