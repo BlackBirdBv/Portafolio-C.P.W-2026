@@ -322,10 +322,16 @@ escala de valores de z-index 10 para elementos posicionados dentro del contenido
     flex-basis: 0;
 }
 
-.tarjetas{
+/* .tarjetas{
     display: flex;
     flex: 1;
     gap: 20px;
     flex-wrap: wrap;
+} */
 
+.galeria-grid{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
 }

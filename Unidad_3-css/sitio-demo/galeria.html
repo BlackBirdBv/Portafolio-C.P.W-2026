@@ -38,7 +38,30 @@
     <main id="contenido">
         <article>
             <h1>Galeria de imagenes</h1>
-        <div class="tarjeta">
+        <div class="tarjeta galeria-grid">
+            <!-- Imagen y sus atributos -->
+            <img src="recursos/S.7_Lab01.jpg" alt="Imagen de la galeria de un laboratorio de informatica" width="600" height="400">
+
+            <!-- FIGURE: AGRUPA UN CONTENIDO CON UNA EXPLICACION -->
+            <figure>
+                <img src="recursos/S.7_Lab02.jpg" alt="Imagen de la galeria de un laboratorio de informatica" width="600" height="500">
+                <figcaption>Imagen de un laboratorio de informatica</figcaption>
+            </figure>
+
+
+            <!-- VARIOS FORMATOS: el navegador elige el uno -->
+            <figure class="figura-destacada">
+                <picture>
+                    <source srcset="recursos/S.7_Lab01.webp" type="image/webp" />
+                    <source srcset="recursos/S.7_Lab01.jpg" type="image/jpeg" />
+                    <img src="recursos/S.7_Lab01.jpg" alt="Imagen de la galeria de un laboratorio de informatica" width="800" height="500" />
+                </picture>
+                <span class="etiqueta">Destacada</span>
+                <figcaption>Imagen de un laboratorio de informatica</figcaption>
+            </figure>
+
+            <!-- Copio imagenes de galeria -->
+
             <!-- Imagen y sus atributos -->
             <img src="recursos/S.7_Lab01.jpg" alt="Imagen de la galeria de un laboratorio de informatica" width="600" height="400">
 
