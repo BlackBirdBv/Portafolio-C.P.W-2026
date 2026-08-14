@@ -322,10 +322,65 @@ escala de valores de z-index 10 para elementos posicionados dentro del contenido
     flex-basis: 0;
 }
 
-.tarjetas{
+/* .tarjetas{
     display: flex;
     flex: 1;
     gap: 20px;
     flex-wrap: wrap;
+} */
 
+.galeria-grid{
+    display: flex;
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 2fr 1fr; */
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 20px;
+}
+
+.galeria-grid figure:first-of-type{
+    grid-column: 1 / 3 ;/*desde la linea 3 abarca las columnas 1 2
+    el segundo numero es la linea donde termina, no la ultima colum que ocupa*/
+}
+
+/* Forma abreviada con span */
+
+.galeria-grid figure:first-of-type{
+    grid-column: span 2;
+}
+
+/* con filas  */
+
+.destacada{
+    grid-column: span 2; /*abarca dos filas*/
+}
+
+#cotenido{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 24px;
+
+    grid-template-areas: 'indice principal'  'indice leteral';
+    /*CSS dibuja la estructura, cada cadena de texto es una fila.
+    cada palabra dentro es una celda 
+    repetir un nombre que una zona abarque varias celdas.
+    aqui el indice ocupa dos filas de la primera columna */
+    #contenido > nav{ grid-area: indice;}
+    #contenido > article{ grid-area: principal;}
+    #contenido > aside{ grid-area: lateral;}
+    grid-template-areas: 'indice principal';
+}
+
+/* que las imagenes no se deformen */
+.galeria-grid img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.tarjeta2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
 }
