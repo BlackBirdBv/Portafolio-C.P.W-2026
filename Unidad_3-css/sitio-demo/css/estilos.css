@@ -378,3 +378,9 @@ escala de valores de z-index 10 para elementos posicionados dentro del contenido
     object-fit: cover;
     border-radius: 6px;
 }
+
+.tarjeta2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+}
