@@ -79,7 +79,7 @@ Portafolio-Codificación de Páginas Web/
 |  S15   | Display y posicionamiento  | Aplcacion funciones y usos                                                   | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S15.png) |
 |  S16   | Flexbox                    | Aplicacion y uso en los contenedores propiedades, etc                        | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S16.png) |
 |  S17   | CSS Grid                   | Aplicacion y uso en los contenedores propiedades con grid                    | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S17.png) |
-|  S18   | Componentes estilizados    |             | [ver](Unidad_3-css) | [ver](recursos/) |
+|  S18   | Componentes estilizados    | Estilizacion de bloques, contenidos y objetos en la pagina                   | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S18.png) |
 |  S19   | Animaciones y filtros      |             | [ver](Unidad_3-css) | [ver](recursos/) |
 |  S20   | SCSS y repaso              |             | [ver](Unidad_3-css) | [ver](recursos/) |
 
