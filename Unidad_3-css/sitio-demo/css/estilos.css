@@ -483,5 +483,43 @@ form small{
     color: #6b7280;
 }/*los <small> que acompañan los campos con los texto*/
 
+/* Estilizar el boton con estados */
 
+.boton, .boton-secundario{
+    background-color: #c55a11;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
 
+/* Los tres estados: 1 hover */
+.boton:hover{
+    background-color: #a8490e;
+}
+
+/* Los tres estados: 2 active */
+.boton:active{
+    background-color: #8a3b0b;
+}
+
+/*Estados: 3 focus */
+.boton:focus{
+    outline: 2px solid #f5c518;
+    outline-offset: 2px;
+}
+
+/* variante secundaria */
+.boton-secundario{
+    background-color: #6b7280;
+} 
+
+.boton-secundario:hover{
+    background-color: #4b5563;
+}
+
+/*  */
