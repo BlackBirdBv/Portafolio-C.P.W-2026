@@ -529,3 +529,8 @@ form small{
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     /*0 desplazamiento horizontal 4px es el desplazamiento vertical. 12px es el desenfoque */
 }
+
+/* tarjeta interactiva */
+.tarjeta:hover{
+    transform: translateY(-5px);
+}
