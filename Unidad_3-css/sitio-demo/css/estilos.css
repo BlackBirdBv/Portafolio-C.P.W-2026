@@ -466,8 +466,22 @@ form textarea:focus{
     box-shadow: 0 0 0 3px rgba(91, 78, 121, 0.15);
 }
 
-/*  */
-/* form input:invalid:not(placeholder-shown){
+/* los estados de vlidacion  */
+form input:invalid:not(:placeholder-shown){
+    border-color: #c0392b;
+}
+form input:valid:not(:placeholder-shown){
+    border-color: #2e7d32;
+}/*Apoya la validacion HTMLen los required, type, pattern, minlegth, etc, colocando un halo de color segun si es dato correcto o no*/
 
-} */
+/*  */
+form small{
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color: #6b7280;
+}/*los <small> que acompañan los campos con los texto*/
+
+
 
