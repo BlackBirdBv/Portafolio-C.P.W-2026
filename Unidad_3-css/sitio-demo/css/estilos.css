@@ -251,12 +251,37 @@ caption{
     padding: 8px;
     font-weight: 700;
     margin-bottom: 24px;
+    color: #6b7280;
 }
 
+th, td{
+    padding: 10px;
+    border: 1px solid #DDDDDD;
+    text-align: left;
+}
+
+thead th{
+    background-color: #1f4e79;
+    color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
 /* Pseudo-class : nth-child: fila cebra en la tabla */
-tbody tr:nth-child(even){
+tbody tr :nth-child(even){
     background-color: #eec8c8;
+}
+
+tbody tr:hover{
+    background-color: #e3eef9;
+}
+
+tfoot td{
+    padding: 12px;
+    font-style: italic;
+    background-color: #f5f7fa;
+    border-top: 2px solid #1f4e79;
 }
 
 article p:first-letter{
