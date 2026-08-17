@@ -26,6 +26,9 @@ body{
 }
 
 /* titulo pricipal */
+article h1{
+    color: #1f4e79;
+}
 
 h1{
     color: #ffffff;
@@ -218,6 +221,15 @@ tfoot td{
 
 fieldset{
     padding: 16px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+legend{
+    padding: 0 8px;
+    font-weight: 700;
+    color: #1f4e79;
 }
 
 /* Lstas de horario.html */
@@ -251,12 +263,37 @@ caption{
     padding: 8px;
     font-weight: 700;
     margin-bottom: 24px;
+    color: #6b7280;
 }
 
+th, td{
+    padding: 10px;
+    border: 1px solid #DDDDDD;
+    text-align: left;
+}
+
+thead th{
+    background-color: #1f4e79;
+    color: white;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
 
 /* Pseudo-class : nth-child: fila cebra en la tabla */
-tbody tr:nth-child(even){
+tbody tr :nth-child(even){
     background-color: #eec8c8;
+}
+
+tbody tr:hover{
+    background-color: #e3eef9;
+}
+
+tfoot td{
+    padding: 12px;
+    font-style: italic;
+    background-color: #f5f7fa;
+    border-top: 2px solid #1f4e79;
 }
 
 article p:first-letter{
@@ -272,9 +309,11 @@ article p:first-letter{
 
 /* las figureas de galeria.html */
 figure{
+    background-color: white;
     border: 1px solid #dddddd;
     border-radius: 6px;
     padding: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 } 
 
 /* Los 5 valores de position 
@@ -322,15 +361,8 @@ escala de valores de z-index 10 para elementos posicionados dentro del contenido
     flex-basis: 0;
 }
 
-/* .tarjetas{
-    display: flex;
-    flex: 1;
-    gap: 20px;
-    flex-wrap: wrap;
-} */
-
 .galeria-grid{
-    display: flex;
+    display: grid;
     /* grid-template-columns: 1fr 1fr 1fr;
     grid-template-columns: repeat(3, 1fr);
     grid-template-columns: 2fr 1fr; */
@@ -355,21 +387,20 @@ escala de valores de z-index 10 para elementos posicionados dentro del contenido
     grid-column: span 2; /*abarca dos filas*/
 }
 
-#cotenido{
+/*#cotenido{
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 24px;
-
     grid-template-areas: 'indice principal'  'indice leteral';
     /*CSS dibuja la estructura, cada cadena de texto es una fila.
     cada palabra dentro es una celda 
     repetir un nombre que una zona abarque varias celdas.
     aqui el indice ocupa dos filas de la primera columna */
-    #contenido > nav{ grid-area: indice;}
+    /* #contenido > nav{ grid-area: indice;}
     #contenido > article{ grid-area: principal;}
     #contenido > aside{ grid-area: lateral;}
     grid-template-areas: 'indice principal';
-}
+}*/
 
 /* que las imagenes no se deformen */
 .galeria-grid img{
@@ -383,4 +414,118 @@ escala de valores de z-index 10 para elementos posicionados dentro del contenido
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 100px;
+}
+
+form label{/*Display block pone la etiqueta sobre el campo
+            funciona mejor en pantallas angostas*/
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="tel"],
+form input[type="password"],
+form input[type="number"],
+form input[type="date"],
+form select,
+form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    margin-bottom: 15px;
+    font-size: 1rem;
+    font-family: inherit;/*los campos de formulario NO HEREDAN la fuente
+                        del  body poor omision sin esta linea el fformulario
+                        aparecera con la fuente del sistema*/
+}
+
+/* Casillas por separado */
+form input[type="radio"],
+form input[type="checkbox"]{
+    width: auto;
+    margin-right: 6px;
+    margin-bottom: 0;
+}
+
+form input[type="radio"] + label,
+form input[type="checkbox"] + label{
+    display: inline;
+    font-weight: 400;
+}/*El selector  + alcanza la etiqueta y display: inline los coloca una al lado del otro*/
+
+form input:focus,
+form select:focus,
+form textarea:focus{
+    outline: none;
+    border-color: #1f4e79;
+    box-shadow: 0 0 0 3px rgba(91, 78, 121, 0.15);
+}
+
+/* los estados de vlidacion  */
+form input:invalid:not(:placeholder-shown){
+    border-color: #c0392b;
+}
+form input:valid:not(:placeholder-shown){
+    border-color: #2e7d32;
+}/*Apoya la validacion HTMLen los required, type, pattern, minlegth, etc, colocando un halo de color segun si es dato correcto o no*/
+
+/*  */
+form small{
+    display: block;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 0.8rem;
+    color: #6b7280;
+}/*los <small> que acompañan los campos con los texto*/
+
+/* Estilizar el boton con estados */
+
+.boton, .boton-secundario{
+    background-color: #c55a11;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* Los tres estados: 1 hover */
+.boton:hover{
+    background-color: #a8490e;
+}
+
+/* Los tres estados: 2 active */
+.boton:active{
+    background-color: #8a3b0b;
+}
+
+/*Estados: 3 focus */
+.boton:focus{
+    outline: 2px solid #f5c518;
+    outline-offset: 2px;
+}
+
+/* variante secundaria */
+.boton-secundario{
+    background-color: #6b7280;
+} 
+
+.boton-secundario:hover{
+    background-color: #4b5563;
+}
+
+/* tarjetas con sombra */
+
+.tarjeta{
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /*0 desplazamiento horizontal 4px es el desplazamiento vertical. 12px es el desenfoque */
 }
