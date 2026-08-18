@@ -9,6 +9,15 @@ html{
     box-sizing: border-box;
 }
 
+/* paleta de colores */
+:root{
+    --olive: #606c38;
+    --Vlack: #283618;
+    --Cornsik: #fefae0;
+    --Caramel: #dda15e;
+    --Copper: #bc6c25;
+}
+
 /* configuraciones generales del sitio */
 body{
     font-family: "Rubik", sans-serif;
@@ -18,8 +27,8 @@ body{
 }
 
 header{
-    background-color: #623307;
     padding: 10px 20px;
+    width: 100%;
 }
 
 header nav ul{
@@ -46,19 +55,135 @@ header nav ul li a:hover{
 
 h1{
     font-size: 40px;
-    border-bottom: 3px solid black;
+    border-bottom: 3px solid var(--Copper);
     margin: 10px 0;
+    color: var(--Copper);
+    text-align: center;
 }
 
 h2{
     font-size: 26px;
-    border-bottom: 2px solid black;
+    border-bottom: 2px solid var(--Copper);
     margin: 15px 0;
+    color: var(--Copper);
 }
 
 h3{
     font-size: 16px;
+    color: var(--Copper);
 }
+
+/* header config */
+
+header nav{
+    background-color: var(--olive);
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 5px 30px;
+    justify-content: space-between;
+    box-shadow: 0 2px 8px black;
+}
+
+.contenedorLogo img{
+    width: 50px;
+}
+
+/* fin header config */
+
+/* main config */
+
+#contenido{
+    margin-top: 45px;
+    background-color: var(--Cornsik);
+    padding: 10px 20px;
+}
+
+#contenido p{
+    color: var(--Copper);
+    margin-left: 20px;
+}
+
+    /* main destacado */
+    #destacadoIndex ul{
+        color: var(--Copper);
+        margin-left: 70px;
+    }
+
+    /* main experiencia */
+    #experienciaIndex dl{
+        color: var(--Copper);
+        margin: 10px;
+    }
+
+    #experienciaIndex dl dd{
+        margin-left: 20px;
+    }
+
+    /* main cafe */
+    #cafeIdealIndex ol{
+        margin-left: 40px;
+        color: var(--Copper);
+    }
+
+    /* main menu */
+    #menuIndex table{
+        width: 100%;
+    }
+
+    #menuIndex caption{
+        color: var(--Copper);
+        font-size: 26px;
+        padding: 10px;
+    }
+
+    #menuIndex thead tr th{
+        font-weight: 700;
+        font-size: 24px;
+        color: var(--Copper);
+    }
+
+    #menuIndex tbody th{
+        color: var(--Copper);
+        text-align: start;
+    }
+
+/* main config fin */
+
+/* footer config */
+
+footer{
+    background-color: var(--Vlack);
+    position: absolute;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+}
+
+.footContenido{
+    padding: 10px 30px;
+}
+
+.footContenido
+
+footer p{
+    background-color: var(--olive);
+    padding: 5px 0;
+    width: 100%;
+    text-align: center;
+}
+
+footer p small{
+    color: white;
+}
+
+/* footer config fin */
 
 /* destacado del index */
 .destacadoIndex ul{

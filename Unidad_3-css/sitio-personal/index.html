@@ -11,7 +11,7 @@
     <title>Cafeteria | CafeTico</title>
 
     <!-- flavicon -->
-    <link rel="icon" href="resources/Logo/cafe.png">
+    <link rel="icon" href="resources/Logo/favicon.png">
 
     <!-- estilos css -->
     <link rel="stylesheet" href="css/estilos.css">
@@ -26,12 +26,10 @@
     <!-- CABECERA -->
     <header>
         <nav>
-            <svg xmlns="http://w3.org" viewBox="0 0 100 100" width="75" height="75">
-                <!-- Cuerpo principal del grano de café -->
-                <ellipse cx="50" cy="50" rx="35" ry="25" fill="#6F4E37" transform="rotate(-25 50 50)" />
-                <!-- Línea o corte central con efecto de profundidad -->
-                <path d="M 32 38 Q 50 55 68 62" stroke="#4A3319" stroke-width="4" fill="none" stroke-linecap="round" />
-            </svg>
+            <div class="contenedorLogo">
+                <img src="resources/Logo/LogoCafeTico.svg" alt="">
+                
+            </div>
 
             <ul>
                 <li><a href="index.html">Inicio</a></li>
@@ -59,7 +57,7 @@
                 <br>
             </p>
 
-            <section class="destacadoIndex">
+            <section id="destacadoIndex">
                 <h2>Lo que nos hace especiales</h2>
                 <ul>
                     <li>
@@ -91,7 +89,7 @@
                 <br>
             </p>
 
-            <section>
+            <section id="experienciaIndex">
                 <h2>Nuestras Experiencias y Métodos</h2>
 
                 <dl>
@@ -127,7 +125,7 @@
                 siente la calidez de la taza entre tus manos y descubre por qué en CafeTico cada detalle está hecho con el corazón. <br>
             </p>
 
-            <section>
+            <section id="cafeIdealIndex">
                 <h2>¿Cómo pedir tu café ideal?</h2>
 
                 <ol type="1">
@@ -155,7 +153,7 @@
             </section>
 
 
-            <section>
+            <section id="menuIndex">
                 <h2>Destacados del Menú</h2>
                 <table>
                     <caption><b>Los Favoritos de la Casa</b></caption>
@@ -196,12 +194,14 @@
     </main>
 
     <footer>
-        <h2>Contacto</h2>
-        <address>
-            Cafeteria CafeTico<br>
-            Reservaciones al:<br>
-            Correo: <a href="mailto:CafeTico506@gmail.com">CafeTico506@gmail.com</a>
-        </address>
+        <div class="footContenido">
+            <h2>Contacto</h2>
+            <address>
+                Cafeteria CafeTico<br>
+                Reservaciones al:<br>
+                Correo: <a href="mailto:CafeTico506@gmail.com">CafeTico506@gmail.com</a>
+            </address>
+        </div>
         
         <p><small>&copy; 2026 &middot; CafeTico &middot; Todos los derechos reservados</small></p>
     </footer>
