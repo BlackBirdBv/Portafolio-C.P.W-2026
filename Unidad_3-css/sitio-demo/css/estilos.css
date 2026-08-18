@@ -134,6 +134,14 @@ header nav a{
     font-size: 0.9rem;
     text-decoration: none;
     padding: 10px 15px;
+    margin-right: 15px;
+    transition: color 0.3s;
+    transition: background-color 0.3s ease 0.1s;
+    /* ease: arranca lento y acelera, predetermido
+    linear: inicia velocidad constante
+    ease in: arranca lento 
+    ease out: termina lento
+    ease in-out entra y sale lento */ 
 }
 
 main nav{
@@ -181,7 +189,7 @@ nav a{
 }
 
 /* psuedo-clase :hover */
-nav a:hover{
+header nav a:hover{
     color: #f8cbad;
 }
 
@@ -498,6 +506,7 @@ form small{
 /* Los tres estados: 1 hover */
 .boton:hover{
     background-color: #a8490e;
+    transition: background-color 0.3s;
 }
 
 /* Los tres estados: 2 active */
@@ -534,3 +543,4 @@ form small{
 .tarjeta:hover{
     transform: translateY(-5px);
 }
+
