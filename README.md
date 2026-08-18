@@ -70,17 +70,17 @@ Portafolio-Codificación de Páginas Web/
 <details markdown="1">
 <summary><b>Unidad 3 · Codificación de hojas de estilo</b> (sesiones 11 a 20)</summary>
 
-| Sesión | Tema                       |                                Qué aprendí                                   |                     Trabajo                    |          Captura        |
-| :----: | :------------------------- | :--------------------------------------------------------------------------- | :--------------------------------------------: | :---------------------: |
-|  S11   | Introducción a CSS         | introduccion de css (reglas y configuraciones)                               | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S11.png) |
-|  S12   | Selectores y pseudo-clases | Uso y aplicacion de selectores, pseudo-clases y links de tipografias         | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S12.png) |
-|  S13   | Tipografía y color         | Tipografia, color y fondos: uso, aplicacionciones y medidas para paginas web | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S13.png) |
-|  S14   | Modelo de cajas            | Medidas, usos, posiciones y funcionamiento                                   | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S14.png) |
-|  S15   | Display y posicionamiento  | Aplcacion funciones y usos                                                   | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S15.png) |
-|  S16   | Flexbox                    | Aplicacion y uso en los contenedores propiedades, etc                        | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S16.png) |
-|  S17   | CSS Grid                   | Aplicacion y uso en los contenedores propiedades con grid                    | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S17.png) |
-|  S18   | Componentes estilizados    | Estilizacion de bloques, contenidos y objetos en la pagina                   | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S18.png) |
-|  S19   | Animaciones y filtros      |             | [ver](Unidad_3-css) | [ver](recursos/) |
+| Sesión | Tema                       |                                Qué aprendí                                    |                     Trabajo                    |          Captura        |
+| :----: | :------------------------- | :---------------------------------------------------------------------------- | :--------------------------------------------: | :---------------------: |
+|  S11   | Introducción a CSS         | introduccion de css (reglas y configuraciones)                                | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S11.png) |
+|  S12   | Selectores y pseudo-clases | Uso y aplicacion de selectores, pseudo-clases y links de tipografias          | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S12.png) |
+|  S13   | Tipografía y color         | Tipografia, color y fondos: uso, aplicacionciones y medidas para paginas web  | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S13.png) |
+|  S14   | Modelo de cajas            | Medidas, usos, posiciones y funcionamiento                                    | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S14.png) |
+|  S15   | Display y posicionamiento  | Aplcacion funciones y usos                                                    | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S15.png) |
+|  S16   | Flexbox                    | Aplicacion y uso en los contenedores propiedades, etc                         | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S16.png) |
+|  S17   | CSS Grid                   | Aplicacion y uso en los contenedores propiedades con grid                     | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S17.png) |
+|  S18   | Componentes estilizados    | Estilizacion de bloques, contenidos y objetos en la pagina                    | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S18.png) |
+|  S19   | Animaciones y filtros      | Propiedades de filtros, estructuras de animaciones movimiento de contenedores | [ver](Unidad_3-css/sitio-demo/css/estilos.css) | [ver](recursos/S19.png) |
 |  S20   | SCSS y repaso              |             | [ver](Unidad_3-css) | [ver](recursos/) |
 
 </details>
