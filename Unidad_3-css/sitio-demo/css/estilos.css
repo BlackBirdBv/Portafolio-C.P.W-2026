@@ -544,3 +544,14 @@ form small{
     transform: translateY(-5px);
 }
 
+.tarjeta figure:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transform: scale(1.0.3);/*Escala .1 del tamaño original*/
+    transform: scale(1.1, 0.9);/*Aplica X y Y por separado*/
+    transform: translateY(-5px);/*Desplazar en eje Y*/
+    transform: rotate(5deg);/*Gira*/
+    transform: skew(10deg);/*inclina grados*/
+    transform: translateY(-5px) scale(1.03);
+}
+
