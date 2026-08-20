@@ -35,3 +35,16 @@
     --ancho-max: 120rem; /*1200px*/
 }
 
+/* RESET Y BASE TIPOGRAFIA */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /* LA BASE DEL TAMAÑO. La tecnica del 62.5% */
+html{
+    font-size: 62.5%; /*por omision el navegador usa 16px para el tamaño base: el 62.5 de 16 es exactamente 10*/
+    scroll-behavior: smooth; /*Salto suave al usar navegacion por anclas */
+}
