@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="author" content="Kevin_Cardenas">
+    <meta name="description" content="Sitio web de una soda & restaurante (Sabores del Barrio)">
+    <meta name="keywords" content="Cafe, almuersos, desayuno, sabor">
+
+    <link rel="icon" href="recursos/gaseosa.png">
+
+    <title>Sabores del Barrio</title>
+</head>
+<body>
+    <!-- Logo y navegacion -->
+    <header style="display: flex; justify-content: space-between;">
+        <div style="display: flex;">
+            <img src="recursos/gaseosa.png" alt="una gaseosa buen sasbrosa" style="height: 75px;">
+            <p style="font-size: 32px;">Sabores del Barrio</p>
+        </div>
+
+        <nav>
+            <ul style="display: flex; list-style: none; font-size: 18px;">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="servicios.html">&nbsp; Servicios</a></li>
+                <li><a href="contacto.html" target="_blank">&nbsp; Pedidos</a></li>
+                <li><a href="nosotros.html">&nbsp; Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido de inicio -->
+    <main>
+        <form action="#" method="post">
+            <h1>Servicio a domicilio</h1>
+                <fieldset>
+                    <legend>Elegi un numero y pedi lo que quieras</legend>
+                    
+                    <label for="nombre">Nombre completo *</label><br>
+                    <input type="text" id="nombre" name="nombre" minlength="3" maxlength="60" placeholder="Ej:Carlos Rodríguez" required>
+                    <br><br>
+                    
+                    <label for="correo">Correo electrónico *</label><br>
+                    <input type="email" id="correo" name="correo" placeholder="participante@ejemplo.com" required>
+                    <br><br>
+
+                    <label for="telefono">Teléfono *</label><br>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{8}" title="Ocho dígitos, sin espacios ni guiones" placeholder="88888888" required>
+                    <br><br>
+
+                    <label for="direccion">Direccion *</label><br>
+                    <input type="text" id="direccion" name="nombre" minlength="3" maxlength="300" placeholder="Ej:del la iglesia san martin 50mts sur" required>
+                    <br><br>
+
+                    <fieldset>
+                        <legend>Combos</legend>
+
+                        <input type="radio" id="combo_1" name="combo_menu" value="combo_1">
+                        <label for="combo_1">x4 Super Hamb, 1x Gaseosas 1L | ₡5000</label>
+                        <br>
+
+                        <input type="radio" id="combo_2" name="combo_menu" value="combo_2">
+                        <label for="combo_2">x2 Saichipapas , 1x Gaseosas 1L | ₡4000</label>
+                        <br>
+
+                        <input type="radio" id="combo_3" name="combo_menu" value="combo_3">
+                        <label for="combo_3">x6 Taco de Harina Doble , 1x Gaseosas 1L | ₡5500</label>
+                        <br>
+
+                        <input type="radio" id="combo_4" name="combo_menu" value="combo_4">
+                        <label for="combo_4">x6 Hot Dog , 1x Gaseosas 1L | ₡4700</label>
+                        <br>
+
+                        <input type="radio" id="combo_5" name="combo_menu" value="combo_5">
+                        <label for="combo_5">x2 Patacones Locos , 1x Gaseosas 1L | ₡4500</label>
+                        <br>
+
+                    </fieldset>
+                    <br>
+                    
+                    <label for="extras">Extras</label><br>
+                    <textarea name="extras" id="extras" style="width: 350px;"></textarea>
+                    <br><br>
+                    
+                    <button>Pedir</button>
+
+                </fieldset>
+            </form>
+    </main>
+
+    <!-- pie de pagina -->
+    <footer>
+        <h2>Sabores del Barrio un lugar como el hogar</h2>
+
+        <address>mandanos mensaje al: 
+            <a href="saboresdelbarrioeslomejor@gmail.com">saboresdelbarrioeslomejor@gmail.com</a>
+        </address>
+
+        <p>
+            <small>&copy; 2026 &middot; Sabores del Barrio &middot; Todos los derechos reservados</small>
+        </p>
+    </footer>
+</body>
+</html>
