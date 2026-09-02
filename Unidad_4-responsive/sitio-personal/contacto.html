@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- METADATOS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cardenas_kev">
+    <meta name="description" content="Sitio web de una tienda de cafe">
+    <meta name=" keywords" content="Cafe, Expresso, Blog, ">
+
+    <title>Horarios | CafeTico</title>
+
+    <!-- flavicon -->
+    <link rel="icon" href="resources/Logo/cafe.png">
+
+    <!-- estilos css -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- CABECERA -->
+    <header id="cabecera" class="cabecera">
+        <div class="cabecera_Logo">
+            <img src="resources/Logo/LogoCafeTico.svg" alt="Granos de cafe" width="60" > 
+            <p class="titulo_cabecera">CafeTico</p>
+        </div>
+
+        <nav aria-label="Navegación principal">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="ubicacion.html">Ubicados</a></li>
+                <li><a href="contacto.html">Solicitud de Empleo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <article>
+            <h1>Unete a nuestro equipo</h1>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>Formulario de solicitud de empleo (CafeTico)</legend>
+                    
+                    <label for="nombre">Nombre completo *</label><br>
+                    <input type="text" id="nombre" name="nombre" minlength="3" maxlength="60" placeholder="Ej:Carlos Rodríguez" required>
+                    <br><br>
+                    
+                    <label for="cedula">Número de identificación *</label><br>
+                    <input type="text" id="cedula" name="cedula" pattern="[0-9]{9}" title="Nueve dígitos, sin guiones ni espacios" placeholder="122235643" required>
+                    <br><br>
+                    
+                    <label for="correo">Correo electrónico *</label><br>
+                    <input type="email" id="correo" name="correo" placeholder="participante@ejemplo.com" required>
+                    <br><br>
+
+                    <label for="telefono">Teléfono *</label><br>
+                    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{8}" title="Ocho dígitos, sin espacios ni guiones" placeholder="88888888" required>
+                    <br><br>
+
+                    <label for="archivo">Adjuntar curriculum*</label><br>
+                    <input type="file" id="archivo" name="archivo" required>
+                    <br><br>
+
+                    <fieldset>
+                        <legend>Consentimiento</legend>
+
+                        <input type="radio" id="afirmacion" name="consentimiento" value="afirmacion">
+                        <label for="afirmacion">Doy mi consentimiento para leer y evaluar esta informacion</label>
+                        <br>
+                        <input type="radio" id="Negacion" name="consentimiento" value="afirmacion">
+                        <label for="Negacion">No autorizo para leer y evaluar esta informacion</label>
+                    </fieldset>
+
+                    <br>
+                    <button>Enviar Informacion</button>
+                </fieldset>
+            </form>
+        </article>
+    </main>
+
+    <footer>
+        <h2>Contacto</h2>
+        <address>
+            Cafeteria CafeTico<br>
+            Reservaciones al:<br>
+            Correo: <a href="mailto:CafeTico506@gmail.com">CafeTico506@gmail.com</a>
+        </address>
+        
+        <p><small>&copy; 2026 &middot; CafeTico &middot; Todos los derechos reservados</small></p>
+    </footer>
+</body>
+</html>

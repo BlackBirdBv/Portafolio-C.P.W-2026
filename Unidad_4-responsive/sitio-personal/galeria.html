@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- METADATOS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Cardenas_kev">
+    <meta name="description" content="Sitio web de una tienda de cafe">
+    <meta name=" keywords" content="Cafe, Expresso, Blog, ">
+
+    <title>Galeria | CafeTico</title>
+
+    <!-- flavicon -->
+    <link rel="icon" href="resources/Logo/cafe.png">
+
+    <!-- estilos css -->
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <!-- Tipografia -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <!-- CABECERA -->
+    <header id="cabecera" class="cabecera">
+        <div class="cabecera_Logo">
+            <img src="resources/Logo/LogoCafeTico.svg" alt="Granos de cafe" width="60" > 
+            <p class="titulo_cabecera">CafeTico</p>
+        </div>
+
+        <nav aria-label="Navegación principal">
+            <ul class="menu">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="ubicacion.html">Ubicados</a></li>
+                <li><a href="contacto.html">Solicitud de Empleo</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="contenido">
+        <article>
+            <h1>Conocenos</h1>
+
+            <h2>video local</h2>
+            <video controls>
+                <source src="resources/videos/cafeteria.mp4" type="video/mp4">
+                <source src="resources/videos/cafeteria.webm" type="video/webm">
+                <p>Tu navegador no soporta el elemneto de audio</p>
+                <a href="resources/videos/cafeteria.mp4">Descargar el archivo</a>
+            </video>
+        </article>
+
+        <article>
+            <h2>Imagenes</h2>
+
+            <div style="display: flex;">
+                <figure>
+                    <picture>
+                        <source srcset="resources/img/local.png" type="image/png">
+                        <source srcset="resources/img/local.webp" type="image/webp">
+                        <img srcset="resources/img/local.png" alt="mesas y sillas y facilidades del local" height="300">
+                    </picture>
+                    <figcaption style="font-size: 30px;">Local</figcaption>
+                </figure>
+                    
+                <figure>
+                    <picture>
+                        <source srcset="resources/img/menu.png" type="image/png">
+                        <source srcset="resources/img/menu.webp" type="image/webp">
+                        <img srcset="resources/img/menu.png" alt="Hoja con el menu del local" height="300">
+                    </picture>
+                    <figcaption style="font-size: 30px;">Menu</figcaption>
+                </figure>
+                
+                <figure>
+                    <picture>
+                        <source srcset="resources/img/vitrina.png" type="image/png">
+                        <source srcset="resources/img/vitrina.webp" type="image/webp">
+                        <img srcset="resources/img/vitrina.png" alt="Camara de fio y de calor con productos de reposteria" height="300">
+                    </picture>
+                    <figcaption style="font-size: 30px;">Productos</figcaption>
+                </figure>
+                    
+            </div>
+        </article>
+    </main>
+    
+    <footer>
+        <h2>Contacto</h2>
+        <address>
+            Cafeteria CafeTico<br>
+            Reservaciones al:<br>
+            Correo: <a href="mailto:CafeTico506@gmail.com">CafeTico506@gmail.com</a>
+        </address>
+        
+        <p><small>&copy; 2026 &middot; CafeTico &middot; Todos los derechos reservados</small></p>
+    </footer>
+</body>
+</html>
