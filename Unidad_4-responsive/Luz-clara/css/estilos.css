@@ -1947,6 +1947,7 @@ img {
      4. Recorrer el sitio con la tecla Tab: debe verse siempre dónde
         está el foco */
 
+  /* modalidad movil first */
 @media (min-width:768px) {
   .cabecera{
     flex-direction: row;
