@@ -1947,6 +1947,7 @@ img {
      4. Recorrer el sitio con la tecla Tab: debe verse siempre dónde
         está el foco */
 
+  /* modalidad movil first */
 @media (min-width:768px) {
   .cabecera{
     flex-direction: row;
@@ -1969,3 +1970,99 @@ img {
   }
 }
 
+/* a partir de los 1024px */
+@media (min-width:1024px) {
+  h1{font-size: 4.8rem;} /*h1 recupera su valor predeterminado*/
+
+  .portada{min-height: 55rem;}
+
+  .seccion{padding: var(--esp-xl) var(--esp-lg);}
+}
+
+/* CUANTOS PUNTOS DE QUIEBRE HACEN FALTA 
+para luz clara basta con estos dos 
+
+  hasta 767px         telefono
+  768px               tableta
+  1024px              escritorio  */
+
+  /* COMO  SE ACUMULAN LAS REGLAS 
+  en una pantalla de 1200px se aplacan las tres reglas:
+  1. La base 1200px
+  2. la min-width: 768px (1200 es mayor que 768)
+  3. la de min-width: 1024px (1200 es mayor que 1024)
+  Donde se repite una propiedad, gana la ultima.
+  Si la de 1024 estuviera antes de la regla de 768, la ultima la anularia en pantallas grandes */
+
+/* LA ESCALA COMPLETA, POR TRAMOS */
+
+/* BASE - TELEFONO */
+h1{font-size: 3.2rem; }
+h2{font-size: 2.4rem; }
+h3{font-size: 1.8rem; }
+body{font-size: 1.6rem; }
+
+/* ESCALA TABLETS */
+
+@media (min-width: 768px) {
+  h1{font-size: 4.0rem; }
+  h2{font-size: 2.8rem; }
+  h3{font-size: 1.9rem; }
+}
+
+/* ESCALA ESCRITORIO */
+
+@media (min-width: 1024px) {
+  h1{font-size: 4.8rem; }
+  h2{font-size: 3.2rem; }
+  h3{font-size: 2.0rem; }
+}
+
+/* LA TABLA DE contacto.html */
+.tabla-envoltorio{
+  overflow-x: auto;
+}
+
+@media (max-width: 769px){
+  .tabla th,
+  .tabla td{
+    padding: var(--esp-xs);
+    font-size: 1.4rem;
+  }
+}
+
+@media (min-width: 769px){
+  main p{ max-width: 65ch; }
+}
+/* en movil no hace falta adaptar textos de los parrafos, la pantalla lo hace  */
+
+/*   PUNTOS DE QUIEBRE
+  hasta 767px         telefono
+  768px               tableta
+  1024px              escritorio  */
+
+  /* TABLETA . a partir de 768px
+  @media (min-width:768)
+  cabecera e fila 
+  tiulos mas grandes 
+  mas relleno en las secciones 
+  */
+
+  /* ESCRITORIO . a partir de 1024px
+  @media (min-width:1024)
+  titulos a tamaño completo 
+  portada mas alta 
+  */
+
+  /* AJUSTES SOLO PARA PANTALLA PEQUEÑA
+  @media (max-width:768)
+  celdas de la tableta mas compactas
+   */
+
+  /* ACCESIBILIDAD DEL MOVIMIENTO
+  @media (preder-reduce-motion: reduce)
+  Va siempre al final de todo. desactiva las animaciones desde SO del dispositivo en uso.
+   */
+
+   /* Estos encabezados NO son decorativos.
+   Quien abra esta hoja de estilos sepa o tenga una idea de lo que se hizo y de la estrategia que se uso */
