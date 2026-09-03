@@ -2,8 +2,8 @@
 :root{
     /* paleta de colores */
     --color-pricipal: #533B00;
-    --color-secundario: #fcc39b;
-    --color-secundario_alt: #ffb27a;
+    --color-secundario: #fab685;
+    --color-secundario_alt: #fa9349;
     --color-fondo: #FFEFDA;
     --color-fondo-alt: #FBF4EB;
     --color-fondo-pie: #302200;
@@ -282,7 +282,7 @@ section{
     color: var(--color-texto-3);
 }
 
-/* Experiencia Index */
+/* seccion experiencia */
 
 .experienciaList{
     display: flex;
@@ -292,35 +292,44 @@ section{
 }
 
 .experienciaList dt{
-    font-size: var(--tam-xs);
+    font-size: var(--tam-md);
+    margin-top: var(--esp-lg);
+    color: var(--color-texto-1);
 }
 
 .experienciaList dd{
-    font-size: var(--tam-xs);
+    font-size: var(--tam-sm);
     max-width: 70rem;
     text-align: center;
+    color: var(--color-texto-3);
 }
+
+/* seccion guia */
 
 
 /* footer config */
 
-footer{
+.footer{
     background-color: var(--color-fondo-pie);
-    position: absolute;
-    left: 0;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 3rem;
     width: 100%;
     height: 200px;
     color: white;
+    padding-top: var(--esp-lg);
 }
 
 .footContenido{
-    padding: 10px 30px;
+    display: flex;
+    justify-content: space-around;
 }
 
-.footContenido
+.footInfo{
+    max-width: 40rem;
+}
+
+
 
 footer p{
     background-color: var(--olive);
@@ -334,11 +343,6 @@ footer p small{
 }
 
 /* footer config fin */
-
-/* destacado del index */
-.destacadoIndex ul{
-    margin-left: 70px;
-}
 
 /* 1080 Tablets */
 /* @media (max-width:1080px) {
