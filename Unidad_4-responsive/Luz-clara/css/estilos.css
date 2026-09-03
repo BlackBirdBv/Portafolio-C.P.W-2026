@@ -2116,3 +2116,29 @@ body{font-size: 1.6rem; }
 
    /* Estos encabezados NO son decorativos.
    Quien abra esta hoja de estilos sepa o tenga una idea de lo que se hizo y de la estrategia que se uso */
+@media (min-width: 768px) {
+  .menu{
+    display: flex;
+    gap: var(--esp-sm);
+    flex-direction: row;
+  }
+  .menu-enlace{
+    border-bottom: none;
+    display: inline-block;
+    padding: var(--esp-xs) var(--esp-sm);
+    border-radius: var(--radio);
+  }
+  .menu-boton{
+    display: none;
+  }
+}
+
+/* Uasr orientacion */
+@media (orientation: landscape) and (max-height: 500px){
+  .portada{
+    min-height: 100vh;
+    padding: var(--esp-sm);
+  }
+  .portada-titulo{font-size: 2.4rem;}
+  .portada-bajada{font-size: 1.5rem;}
+}
