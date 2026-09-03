@@ -128,11 +128,11 @@ Proyecto propio construido de forma autónoma.
 <details markdown="1">
 <summary><b>Unidad 4 · Páginas web responsivas</b> (sesiones 23 a 28)</summary>
 
-| Sesión | Tema                            |                     Qué aprendí                    |                        Trabajo                        |                  Captura                |
-| :----: | :------------------------------ | :------------------------------------------------- | :---------------------------------------------------: | :-------------------------------------: |
-|  S23   | Viewport y anchos fluidos       | Diseño adaptativo, viewport y anchos fluidos       | [ver](Unidad_4-responsive/Luz-clara/index.html)       | [ver](recursos/S23.png)                 |
-|  S24   | Media queries y mobile-first    | Uso de mediaqueries medidas generales de pantallas | [ver](Unidad_4-responsive/Luz-clara/css/estilos.css)  | [ver](recursos/S24%20Mediaqueries.docx) |
-|  S25   | Menú responsivo e impresión     |             | [ver](Unidad_4-responsive)  | [ver](recursos/) |
+| Sesión | Tema                            |                      Qué aprendí                     |                        Trabajo                        |                  Captura                |
+| :----: | :------------------------------ | :--------------------------------------------------- | :---------------------------------------------------: | :-------------------------------------: |
+|  S23   | Viewport y anchos fluidos       | Diseño adaptativo, viewport y anchos fluidos         | [ver](Unidad_4-responsive/Luz-clara/index.html)       | [ver](recursos/S23.png)                 |
+|  S24   | Media queries y mobile-first    | Uso de mediaqueries medidas generales de pantallas   | [ver](Unidad_4-responsive/Luz-clara/css/estilos.css)  | [ver](recursos/S24%20Mediaqueries.docx) |
+|  S25   | Menú responsivo e impresión     | Creacion de menu hamburgueza y estilos para impesion | [ver](Unidad_4-responsive/Luz-clara/css/estilos.css)  | [ver](recursos/S25.png)                 |
 |  S26   | Imágenes y video adaptativos    |             | [ver](Unidad_4-responsive)  | [ver](recursos/) |
 |  S27   | Patrones de diseño adaptativo I |             | [ver](Unidad_4-responsive)  | [ver](recursos/) |
 |  S28   | Patrones II y repaso            |             | [ver](Unidad_4-responsive)  | [ver](recursos/) |
