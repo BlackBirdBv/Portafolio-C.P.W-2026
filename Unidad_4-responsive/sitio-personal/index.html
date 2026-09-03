@@ -21,6 +21,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rubik:wght@300..900&display=swap" rel="stylesheet">
 
+    <!-- Iconos -->
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/4.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+
 </head>
 <body>
     <!-- CABECERA -->
@@ -32,10 +36,10 @@
 
         <nav aria-label="Navegación principal">
             <ul class="menu">
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="galeria.html">Galeria</a></li>
-                <li><a href="ubicacion.html">Ubicados</a></li>
-                <li><a href="contacto.html">Solicitud de Empleo</a></li>
+                <li class="menu_opcion activo"><a href="index.html">Inicio</a></li>
+                <li class="menu_opcion"><a href="galeria.html">Galeria</a></li>
+                <li class="menu_opcion"><a href="ubicacion.html">Ubicados</a></li>
+                <li class="menu_opcion"><a href="contacto.html">Solicitud de Empleo</a></li>
             </ul>
         </nav>
     </header>
@@ -45,47 +49,64 @@
         <!-- portada -->
 
         <section id="presentacion" class="presentacion">
-            <p class="presentacion-saludo">Bienvenidos</p>
-            <h1 class="presentacion-titulo">Cafeteria CafeTico</h1>
-            <p class="presentacion-texto">
-              Disfruta lo bueno del café por la mañana
-            </p>
-            <a href="#contacto" class="boton boton-principal">Trabaja con nosotros</a>
+            <div class="presentacion-tarjeta">
+                <p class="presentacion-saludo">Bienvenidos</p>
+                <h1 class="presentacion-titulo">Cafeteria CafeTico</h1>
+                <p class="presentacion-texto">
+                    Disfruta lo bueno del café por la mañana.
+                </p>
+                <a href="contacto.html" class="boton boton-principal">Trabaja con nosotros</a>
+            </div>
         </section>
 
+        <!-- seccion informacion -->
+
         <section class="seccion">
-        <h2 class="seccion-titulo">Cafeteria CafeTico</h2>
-        <p>
-            En CafeTico, creemos que cada taza cuenta una historia.Seleccionamos cuidadosamente granos de origen local e       <br> 
-            internacional tostados a la perfección para resaltar sus notas yaromas únicos. Ya sea que busques el impulso de un <br>
-            buen espresso por la mañana, un lugar tranquilo para trabajar contu laptop, o una tarde de plática acompañada de   <br>
-            repostería artesanal recién horneada... este es tulugar.                                                          <br>
-            <br>
-            Al cruzar la puerta, te recibe el aroma inconfundible a café reciénmolido y el murmullo suave de una comunidad     <br>
-            que se encuentra. Hemos diseñado un espacio donde la madera cálida,la iluminación tenue y la música de fondo       <br>
-            se combinan para crear un refugio del ajetreo diario. Queremos quesientas que el tiempo se detiene, aunque sea     <br>
-            solo por mediahora.                                                                                               <br>
-            <br>
-        </p>
+            <h2 class="seccion-titulo">Cafeteria CafeTico</h2>
+            <p class="seccion-texto">
+                En CafeTico, creemos que cada taza cuenta una historia.Seleccionamos cuidadosamente granos de origen local e       
+                internacional tostados a la perfección para resaltar sus notas yaromas únicos. Ya sea que busques el impulso de un
+                buen espresso por la mañana, un lugar tranquilo para trabajar contu laptop, o una tarde de plática acompañada de  
+                repostería artesanal recién horneada... este es tulugar.                      
+            </p>
+            <p class="seccion-texto">
+                Al cruzar la puerta, te recibe el aroma inconfundible a café reciénmolido y el murmullo suave de una comunidad
+                que se encuentra. Hemos diseñado un espacio donde la madera cálida,la iluminación tenue y la música de fondo  
+                se combinan para crear un refugio del ajetreo diario. Queremos quesientas que el tiempo se detiene, aunque sea
+                solo por mediahora.
+            </p>
         </section>
+
+        <!-- seccion destacado -->
 
         <section id="destacadoIndex" class="seccion seccion-alterna">
             <h2 class="seccion-titulo">Lo que nos hace especiales</h2>
-            <ul class="destacadoList">
-                <li>
-                    Café de Especialidad: Granos seleccionados y tostados con maestría para los paladares más exigentes.
-                </li>
-                <li>
-                    Repostería Artesanal: Horneamos diariamente opciones dulces y saladas para el maridaje perfecto.
-                </li>
-                <li>
-                    Opciones para Todos: Variedad en leches vegetales, opciones veganas y productos libres de gluten.
-                </li>
-                <li>
-                    Ambiente Ideal: Espacios cómodos, ambiente acogedor, excelente música y Wi-Fi de alta velocidad.
-                </li>
-            </ul>
-            <br>
+            
+            <div class="destacadoCaontenido">
+                <article class="destacadoTarjeta">
+                    <i class="fi fi-sr-circle-star"></i>
+                    <p class="tituloTarjeta">Café de Especialidad:</p>
+                    <p class="textoTarjeta">
+                        Granos seleccionados y tostados con maestría para los paladares más exigentes.
+                    </p>
+                </article>
+
+                <article class="destacadoTarjeta">
+                    <i class="fi fi-sr-pie"></i>
+                    <p class="tituloTarjeta">Repostería Artesanal:</p>
+                    <p class="textoTarjeta">
+                        Horneamos diariamente opciones dulces y saladas para el maridaje perfecto.
+                    </p>
+                </article>
+
+                <article class="destacadoTarjeta">
+                    <i class="fi fi-sr-people-group"></i>
+                    <p class="tituloTarjeta">Ambiente Ideal:</p>
+                    <p class="textoTarjeta">
+                        Espacios cómodos, ambiente acogedor, excelente música y Wi-Fi de alta velocidad.
+                    </p>
+                </article>
+            </div>
         </section>
 
         <section id="experienciaIndex" class="seccion">
