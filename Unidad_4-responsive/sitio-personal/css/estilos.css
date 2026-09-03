@@ -2,20 +2,21 @@
 :root{
     /* paleta de colores */
     --color-pricipal: #533B00;
-    --color-secundario: #FFB17A;
-    --color-secundario_alt: #ff9950;
+    --color-secundario: #fcc39b;
+    --color-secundario_alt: #ffb27a;
     --color-fondo: #FFEFDA;
     --color-fondo-alt: #FBF4EB;
     --color-fondo-pie: #302200;
-    --color-boton: #192852;
+    --color-boton: #ff9100;
     
     /* texto */
-    --color-texto-1: #533B00;
+    --color-texto-1: #463200;
     --color-texto-2: #c5c5c5;
     --color-texto-3: #8d8c8c;
     --color-texto: #1F2428;
     
-    --tam-xs: 1.4rem;
+    --tam-2xs: 1.0rem;
+    --tam-1xs: 1.4rem;
     --tam-sm: 1.8rem;
     --tam-md: 2.4rem;
     --tam-lg: 3.2rem;
@@ -30,11 +31,12 @@
 
     /* Elementos variados */
     --ancho-max: 120rem;
-    --radio: 0.6rem;
+    --radio: 1rem;
     --sombra_1: 0 0.1rem 0.6rem rgba(0,0,0,0.2);
     --sombra_2: 0 0.4rem 1.2rem rgba(0,0,0,0.3);
     --sombra_3: 0 0.8rem 2.0rem rgba(0,0,0,0.3);
     --color-tarjeta: #ffffff;
+    --color-tarjeta-trans: #ffffff46;
     --transition: 0.25s ease;
 }
 
@@ -76,7 +78,7 @@ h1{
 
 h2,h3{ line-height: 1.2;}
 
-h2{font-size: var(--tam-md);}
+h2{font-size: var(--tam-lg);}
 h3{font-size: var(--tam-sm);}
 
 p{font-size: var(--tam-sm);}
@@ -111,8 +113,8 @@ header nav ul li a:hover{
 }
 
 section{
-    padding-top: var(--esp-md);
-    padding-bottom: var(--esp-lg);
+    padding-top: var(--esp-lg);
+    padding-bottom: var(--esp-xl);
 }
 
 /* CABECERA */
@@ -155,9 +157,16 @@ section{
     list-style: none;
 }
 
-.menu li .menu-enlace{
+.menu_opcion{
     font-weight: 700;
     color: var(--color-pricipal);
+}
+
+.activo a{
+    background-color: var(--color-tarjeta);
+    color: var(--color-secundario);
+    padding: var(--esp-xs);
+    border-radius: var(--radio);
 }
 
 /* fin CABECERA */
@@ -169,8 +178,15 @@ section{
 #presentacion{
     background: linear-gradient(45deg, var(--color-secundario), var(--color-secundario_alt));
     padding: var(--esp-xl);
+}
+
+.presentacion-tarjeta{
+    background-color: var(--color-tarjeta-trans);
+    max-width: 60rem;
+    margin: 0 auto;
+    border-radius: var(--radio);
+    padding: var(--esp-lg);
     text-align: center;
-    margin: 0;
 }
 
 .presentacion-saludo{
@@ -181,21 +197,21 @@ section{
 }
 
 .presentacion-titulo{
-    color: var(--color-texto);
+    color: var(--color-texto-1);
     font-weight: 600;
 }
 
 .presentacion-texto{
-    
-    color: var(--color-tarjeta);
-    max-width: 60ch;
-    margin: var(--esp-sm) auto var(--esp-md);
+    color: var(--color-texto-1);
+    font-weight: 500;
+    margin: 0 var(--esp-md) var(--esp-md);
 }
 
 .boton{
     padding: var(--esp-xs) var(--esp-md);
     border-radius: var(--radio);
     font-weight: 700;
+    font-size: var(--tam-sm);
 }
 
 .boton-principal{
@@ -204,20 +220,23 @@ section{
     background-color: var(--color-boton);
 }
 
-    /* trayexctoria */
+/* seccion informacion */
+
 
 .seccion-titulo{
     text-align: center;
     padding: var(--esp-sm);
 }
 
-.seccion p{
+.seccion-texto{
+    color: var(--color-texto-3);
     text-align: center;
+    padding: var(--esp-md) var(--esp-lg);
 }
 
-/* destacadoIndex */
+/* seccion destacado */
 
-.destacadoList{
+/* .destacadoList{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -227,9 +246,43 @@ section{
 .destacadoList li{
     font-size: var(--tam-xs);
     max-width: 40rem;
+} */
+
+.destacadoCaontenido{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    gap: 2rem;
 }
 
-/* experienciaIndex */
+.destacadoTarjeta{
+    background-color: var(--color-tarjeta);
+    padding: var(--esp-lg);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra_1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    border: 1px solid var(--color-pricipal);
+}
+
+.destacadoTarjeta i{
+    font-size: 15rem;
+    color: var(--color-secundario);
+}
+
+.tituloTarjeta{
+    color: var(--color-texto-1);
+    font-weight: 700;
+    font-size: var(--tam-md);
+}
+
+.textoTarjeta{
+    color: var(--color-texto-3);
+}
+
+/* Experiencia Index */
 
 .experienciaList{
     display: flex;
@@ -241,7 +294,6 @@ section{
 .experienciaList dt{
     font-size: var(--tam-xs);
 }
-
 
 .experienciaList dd{
     font-size: var(--tam-xs);
@@ -288,8 +340,8 @@ footer p small{
     margin-left: 70px;
 }
 
-/* 1080 Tablets*/
-@media (max-width:1080px) {
+/* 1080 Tablets */
+/* @media (max-width:1080px) {
     .cabecera{
         justify-content: center;
     }
@@ -298,10 +350,10 @@ footer p small{
         font-size: var(--tam-xs);
         padding: var(--esp-md) var(--esp-sm) var(--esp-lg);
     }
-}
+} */
 
 /* 768 Tablets*/
-@media (max-width:768px) {
+/* @media (max-width:768px) {
     .cabecera{
         padding: var(--esp-md);
     }
@@ -325,11 +377,11 @@ footer p small{
     .presentacion-titulo{
         font-size: var(--tam-lg);
     }
-}
+} */
 
 
 /* 440 Mobile*/
-@media (max-width:440px) {
+/* @media (max-width:440px) {
     .menu{
         gap: 0.1rem;
     }
@@ -345,4 +397,4 @@ footer p small{
     .presentacion-texto{
         font-size: var(--tam-xs);
     }
-}
+} */

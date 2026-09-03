@@ -406,25 +406,71 @@ img {
      —un botón de búsqueda, por ejemplo—, quede alineado sin
      necesidad de reescribir nada.                                    */
 }
-
+/* LA BASE MOVIL */
 .menu {
   display: flex;
-  gap: var(--esp-sm);
+  flex-direction: column;
+  gap: 0;
   list-style: none;
   /* El menú es una LISTA por su significado —es un conjunto de
      enlaces del mismo nivel— pero no debe VERSE como lista. Por eso
      se quitan las viñetas con list-style.                             */
+  width: 100%;
+}
+.menu-control{
+  position: absolute;
+  opacity: 0;
+  width: 0.1rem;
+  height: 0.1rem;
+}
+
+.menu-boton{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--esp-xs);
+  cursor: pointer;
+  padding: var(--esp-xs);
+}
+
+.menu-barra{
+  display: block;
+  width: 2.4rem;
+  height: 0.3rem;
+  background-color: var(--color-marca);
+  border-radius: 0.2rem;
+}
+
+.menu-barra + .menu-barra{
+  margin-top: 0.4rem;
+}
+
+.menu-texto{
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+/* Menu abierto cuanto la casilla esta marcada */
+.menu-control:checked ~ .menu{
+  display: flex;
+  flex-direction: column;
+}
+
+.menu-boton:focus-within{
+  outline: 0.2rem solid var(--color-acento);
+  outline-offset:  0.2rem;
 }
 
 .menu-enlace {
-  display: inline-block;
+  /* display: inline-block; */
   /* OJO: IMPRESCINDIBLE.
      Un enlace es "inline" por omisión, y los elementos inline IGNORAN
      el relleno vertical. Sin esta línea, el padding de arriba y abajo
      de la regla siguiente no haría ningún efecto y el área para hacer
      clic quedaría del alto exacto del texto.                          */
-
-  padding: var(--esp-xs) var(--esp-sm);
+  display: block;
+  padding: var(--esp-sm);
   /* Amplía el ÁREA PULSABLE. No es decorativo: un enlace pequeño es
      difícil de acertar con el dedo en un teléfono.                    */
 
@@ -435,6 +481,8 @@ img {
   /* OJO: La transición va en la regla BASE, no dentro de :hover.
      Si se pusiera en :hover, la entrada sería suave pero la salida
      brusca: al quitar el cursor el color volvería de golpe.           */
+  border-bottom: 0.1rem solid var(--color-linea);
+  text-align: center;
 }
 
 .menu-enlace:hover {
@@ -2016,6 +2064,8 @@ body{font-size: 1.6rem; }
   h1{font-size: 4.8rem; }
   h2{font-size: 3.2rem; }
   h3{font-size: 2.0rem; }
+
+
 }
 
 /* LA TABLA DE contacto.html */
@@ -2066,3 +2116,73 @@ body{font-size: 1.6rem; }
 
    /* Estos encabezados NO son decorativos.
    Quien abra esta hoja de estilos sepa o tenga una idea de lo que se hizo y de la estrategia que se uso */
+@media (min-width: 768px) {
+  .menu{
+    display: flex;
+    gap: var(--esp-sm);
+    flex-direction: row;
+  }
+  .menu-enlace{
+    border-bottom: none;
+    display: inline-block;
+    padding: var(--esp-xs) var(--esp-sm);
+    border-radius: var(--radio);
+  }
+  .menu-boton{
+    display: none;
+  }
+}
+
+/* Uasr orientacion */
+@media (orientation: landscape) and (max-height: 500px){
+  .portada{
+    min-height: 100vh;
+    padding: var(--esp-sm);
+  }
+  .portada-titulo{font-size: 2.4rem;}
+  .portada-bajada{font-size: 1.5rem;}
+}
+
+@media print {
+  /* QUITAR LO QUE NO SIRVE EN EL PAPEL */
+  .cabecera,
+  .menu-boton,
+  .pie,
+  .boton,
+  .volver-arriba,
+  .fila-botones{
+    display: none;
+  }
+
+  /* Ahorrar tinta */
+  body{
+    background: white;
+    color: black;
+    font-size: 11pt;
+  }
+  .seccion,
+  .seccion-alterna{
+    background: none;
+    padding: 0;
+    max-width: none;
+  }
+
+  .tarjeta,
+  .ficha,
+  figure,
+  .tabla{
+    page-break-inside: avoid;
+  }
+
+  h1,h2,h3{
+    page-break-after: avoid;
+  }
+
+  /* mostrar los enlaces */
+  main a[href^="http"]::after{
+    content: "(" attr(href) ")";
+    font-size: 9pt;
+    color: #555;
+  }
+
+}
