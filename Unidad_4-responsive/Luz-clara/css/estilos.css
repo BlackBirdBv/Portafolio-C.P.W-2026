@@ -415,7 +415,7 @@ img {
   /* El menú es una LISTA por su significado —es un conjunto de
      enlaces del mismo nivel— pero no debe VERSE como lista. Por eso
      se quitan las viñetas con list-style.                             */
-  width: 100%;
+  display: none;
 }
 .menu-control{
   position: absolute;
