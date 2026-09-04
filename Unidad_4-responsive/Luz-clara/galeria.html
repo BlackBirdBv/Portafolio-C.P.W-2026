@@ -148,8 +148,13 @@
 
         <!--  recursos/g-05.jpg · 1200 × 1200 px · ocupa 2×2 -->
         <figure class="pieza pieza-grande">
-          <img src="recursos/g-05.jpg" alt="Vista general de un salón durante una celebración al atardecer"
-               width="1200" height="1200" loading="lazy">
+          <picture>
+            <source media="(min-width:1024)" srcset="recursos/g-05_grande.jpg">
+            <source media="(min-width:768)" srcset="recursos/g-05_medina.jpg">
+            <source media="(min-width:468)" srcset="recursos/g-05_pequena.jpg">
+            <img src="recursos/g-05_pequena.jpg" alt="Vista general de un salón durante una celebración al atardecer"
+              width="1200" height="1200" loading="lazy">
+          </picture>
           <figcaption class="pieza-info">
             <span class="pieza-titulo">Atardecer en Santa Ana</span>
             <span class="pieza-categoria">Eventos</span>
