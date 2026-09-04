@@ -35,6 +35,7 @@
 
     <nav class="navegacion" aria-label="Navegación principal">
       <!-- menu hamburgueza -->
+      <input type="checkbox" id="abrir-menu" class="menu-control">
       <label for="abrir-menu" class="menu-boton">
         <span class="menu-barra"></span>
         <span class="menu-barra"></span>
@@ -139,8 +140,13 @@
 
         <!--  MARCADOR DE IMAGEN   recursos/foto-1.jpg  ·  800 × 600 px -->
         <figure class="galeria-pieza pieza-destacada">
-          <img src="recursos/foto-1.jpg" alt="Retrato en blanco y negro junto a una ventana"
-               width="800" height="600">
+          <picture>
+            <source media="(min-width:1024)" srcset="recursos/foto-1_grande.jpg">
+            <source media="(min-width:768)" srcset="recursos/foto-1_grande.jpg">
+            <source media="(min-width:480)" srcset="recursos/foto-1_pequena.jpg">
+            <img src="recursos/foto-1.jpg" alt="Retrato en blanco y negro junto a una ventana"
+              width="800" height="600">
+            </picture>
           <figcaption class="galeria-pie">Retrato de estudio · 2026</figcaption>
         </figure>
 
