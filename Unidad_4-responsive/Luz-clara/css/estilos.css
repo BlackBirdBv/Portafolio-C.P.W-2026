@@ -952,6 +952,18 @@ img {
   font-style: italic;
 }
 
+/* base . telefono. una columna. layout shifter */
+#historia .dos-columnas{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'imagen'
+                        'texto';
+  gap: var(--esp-md);
+  /* en movil la imagen va arriba. */
+}
+
+#historia .columna-texto {grid-area: texto;}
+#historia .columna-imagen {grid-area: imagen;}
 
 /* 10 · LISTAS Y GLOSARIO           tema de la S14 */
 
@@ -2195,56 +2207,6 @@ body{font-size: 1.6rem; }
   .portada-bajada{font-size: 1.5rem;}
 }
 
-@media print {
-  /* QUITAR LO QUE NO SIRVE EN EL PAPEL */
-  .cabecera,
-  .menu-boton,
-  .pie,
-  .boton,
-  .volver-arriba,
-  .fila-botones{
-    display: none;
-  }
-
-  /* Ahorrar tinta */
-  body{
-    background: white;
-    color: black;
-    font-size: 11pt;
-  }
-  .seccion,
-  .seccion-alterna{
-    background: none;
-    padding: 0;
-    max-width: none;
-  }
-
-  .tarjeta,
-  .ficha,
-  figure,
-  .tabla{
-    page-break-inside: avoid;
-  }
-
-  h1,h2,h3{
-    page-break-after: avoid;
-  }
-
-  /* mostrar los enlaces */
-  main a[href^="http"]::after{
-    content: "(" attr(href) ")";
-    font-size: 9pt;
-    color: #555;
-  }
-
-  .video-envoltorio {
-    display: none;
-  }
-  /* Un video en papel no sirve: no se puede reproducir. Si se quiere
-     dejar constancia de que existe, se puede sustituir por su imagen
-     de portada en lugar de ocultarlo.                                */
-}
-
 @media (max-width: 767px) {
   .video-envoltorio {
     border-radius: 0;
@@ -2316,3 +2278,71 @@ body{font-size: 1.6rem; }
     /* la tercera tarjeta ocupa el ancho  */
   }
 }
+
+/* base . tableta Layout Shifter. Imagen a la izquierda */
+@media (min-width: 768px){
+  #historia .dos-columnas{
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 'texto imagen';
+  }
+}
+
+/* base . escritorio. Layout Shifter. Imagen a la izquierda */
+@media (min-width: 1200px){
+  #historia .dos-columnas{
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: 'imagen texto';
+    /* la imagen cambia de lado, sin encoger o bajar */
+  }
+}
+
+@media print {
+  /* QUITAR LO QUE NO SIRVE EN EL PAPEL */
+  .cabecera,
+  .menu-boton,
+  .pie,
+  .boton,
+  .volver-arriba,
+  .fila-botones{
+    display: none;
+  }
+
+  /* Ahorrar tinta */
+  body{
+    background: white;
+    color: black;
+    font-size: 11pt;
+  }
+  .seccion,
+  .seccion-alterna{
+    background: none;
+    padding: 0;
+    max-width: none;
+  }
+
+  .tarjeta,
+  .ficha,
+  figure,
+  .tabla{
+    page-break-inside: avoid;
+  }
+
+  h1,h2,h3{
+    page-break-after: avoid;
+  }
+
+  /* mostrar los enlaces */
+  main a[href^="http"]::after{
+    content: "(" attr(href) ")";
+    font-size: 9pt;
+    color: #555;
+  }
+
+  .video-envoltorio {
+    display: none;
+  }
+  /* Un video en papel no sirve: no se puede reproducir. Si se quiere
+     dejar constancia de que existe, se puede sustituir por su imagen
+     de portada en lugar de ocultarlo.                                */
+}
+
