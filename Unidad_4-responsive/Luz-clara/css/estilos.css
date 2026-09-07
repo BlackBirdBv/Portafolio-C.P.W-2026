@@ -2274,3 +2274,32 @@ body{font-size: 1.6rem; }
   }
   .cita-texte{font-size: 2.2rem;}
 }
+
+/* Mostly Fluid a . mosaico en galeria.html */
+/* Ajustes para telefonos */
+
+@media (max-width: 600px) {
+  .mosaico{
+    grid-template-columns: 1fr;
+    /* una sola columna de 360px, dos columnas de 180px las fotos dejan apreciarse  */
+    grid-auto-rows: 24rem;
+  }
+  .pieza-ancha,
+  .pieza-alta,
+  .pieza-grande{
+    grid-column: auto;
+    grid-row: auto;
+    /* adaptar mosaico con tamaños de distinto  */
+  }
+}
+
+/* Mostly Fluid a . mosaico en galeria.html */
+/* Tope parapantalla grande */
+@media (min-width: 1400px) {
+  .mosaico{
+    max-width: 130rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* Este patron non solo lo encoge tambien se detiene */
+  }
+}
