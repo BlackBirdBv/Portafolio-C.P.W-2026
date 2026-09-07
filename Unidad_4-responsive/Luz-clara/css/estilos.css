@@ -854,6 +854,75 @@ img {
      desde abajo.                                                      */
 }
 
+/* panelfuera de la pantalla. Patron off canvas */
+.panel-control{
+  position: absolute;
+  opacity: 0;
+  width: 0.1rem;
+  height: 0.1rem;
+}
+
+.panel-lateral{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background-color: var(--color-blanco);
+  box-shadow: var(--sombra-3);
+  padding: var(--esp-lg) var(--esp-md);
+  z-index: 200;
+  transform: translateX(-100%);
+  overflow-y: auto;
+}
+
+/* hacer que el panel se deslice */
+.panel-lateral{
+  transform: translateX(-100%);
+  transition: transform 0.3s ease;
+}
+
+/* Abierto cuando la casilla esta marcada */
+.panel-control:checked ~ .panel-lateral{
+  transform: translateX(0);
+  /* vuelve a su posicion entra deslizandose desde la izquierda */
+}
+
+/* La capa oscura de fondo */
+.panel-control:checked ~ .panel-lateral::before{
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 28rem;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.45);
+  z-index: -1;
+}
+
+/*  El boton y el cierre */
+.panel-boton,
+.panel-cerrar{
+  display: inline-block;
+  padding: var(--esp-xs) var(--esp-md);
+  background-color: var(--color-marca);
+  color: var(--color-blanco);
+  border-radius: var(--radio);
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+.panel-cerrar{
+  margin-top: var(--esp-md);
+  background-color: var(--color-fondo-alt);
+  color: var(--color-tinta);
+}
+
+.panel-boton:focus-within,
+.panel-cerrar:focus-within{
+  outline: 0.2rem solid var(--color-acento);
+  outline-offset: 0.2rem;
+}
 
 /* 8 · EQUIPO · CSS GRID           tema de la S17 */
 
@@ -952,6 +1021,18 @@ img {
   font-style: italic;
 }
 
+/* base . telefono. una columna. layout shifter */
+#historia .dos-columnas{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 'imagen'
+                        'texto';
+  gap: var(--esp-md);
+  /* en movil la imagen va arriba. */
+}
+
+#historia .columna-texto {grid-area: texto;}
+#historia .columna-imagen {grid-area: imagen;}
 
 /* 10 · LISTAS Y GLOSARIO           tema de la S14 */
 
@@ -2195,56 +2276,6 @@ body{font-size: 1.6rem; }
   .portada-bajada{font-size: 1.5rem;}
 }
 
-@media print {
-  /* QUITAR LO QUE NO SIRVE EN EL PAPEL */
-  .cabecera,
-  .menu-boton,
-  .pie,
-  .boton,
-  .volver-arriba,
-  .fila-botones{
-    display: none;
-  }
-
-  /* Ahorrar tinta */
-  body{
-    background: white;
-    color: black;
-    font-size: 11pt;
-  }
-  .seccion,
-  .seccion-alterna{
-    background: none;
-    padding: 0;
-    max-width: none;
-  }
-
-  .tarjeta,
-  .ficha,
-  figure,
-  .tabla{
-    page-break-inside: avoid;
-  }
-
-  h1,h2,h3{
-    page-break-after: avoid;
-  }
-
-  /* mostrar los enlaces */
-  main a[href^="http"]::after{
-    content: "(" attr(href) ")";
-    font-size: 9pt;
-    color: #555;
-  }
-
-  .video-envoltorio {
-    display: none;
-  }
-  /* Un video en papel no sirve: no se puede reproducir. Si se quiere
-     dejar constancia de que existe, se puede sustituir por su imagen
-     de portada en lugar de ocultarlo.                                */
-}
-
 @media (max-width: 767px) {
   .video-envoltorio {
     border-radius: 0;
@@ -2316,3 +2347,71 @@ body{font-size: 1.6rem; }
     /* la tercera tarjeta ocupa el ancho  */
   }
 }
+
+/* base . tableta Layout Shifter. Imagen a la izquierda */
+@media (min-width: 768px){
+  #historia .dos-columnas{
+    grid-template-columns: 3fr 2fr;
+    grid-template-areas: 'texto imagen';
+  }
+}
+
+/* base . escritorio. Layout Shifter. Imagen a la izquierda */
+@media (min-width: 1200px){
+  #historia .dos-columnas{
+    grid-template-columns: 2fr 3fr;
+    grid-template-areas: 'imagen texto';
+    /* la imagen cambia de lado, sin encoger o bajar */
+  }
+}
+
+@media print {
+  /* QUITAR LO QUE NO SIRVE EN EL PAPEL */
+  .cabecera,
+  .menu-boton,
+  .pie,
+  .boton,
+  .volver-arriba,
+  .fila-botones{
+    display: none;
+  }
+
+  /* Ahorrar tinta */
+  body{
+    background: white;
+    color: black;
+    font-size: 11pt;
+  }
+  .seccion,
+  .seccion-alterna{
+    background: none;
+    padding: 0;
+    max-width: none;
+  }
+
+  .tarjeta,
+  .ficha,
+  figure,
+  .tabla{
+    page-break-inside: avoid;
+  }
+
+  h1,h2,h3{
+    page-break-after: avoid;
+  }
+
+  /* mostrar los enlaces */
+  main a[href^="http"]::after{
+    content: "(" attr(href) ")";
+    font-size: 9pt;
+    color: #555;
+  }
+
+  .video-envoltorio {
+    display: none;
+  }
+  /* Un video en papel no sirve: no se puede reproducir. Si se quiere
+     dejar constancia de que existe, se puede sustituir por su imagen
+     de portada en lugar de ocultarlo.                                */
+}
+
