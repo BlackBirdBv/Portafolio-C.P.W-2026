@@ -2303,3 +2303,16 @@ body{font-size: 1.6rem; }
     /* Este patron non solo lo encoge tambien se detiene */
   }
 }
+
+/* patron Column Drop en zonas de columnas tarjetas de index.html */
+@media (min-width:620px) and (max-width:900px) {
+  .tarjeta{
+    flex: 1 1 calc(50% - var(--esp-md));
+    /* fuerza a dos por linea 
+    calc() permite mesclar unidadedes*/
+  }
+  .tarjeta:last-child{
+    flex-basis: 100%;
+    /* la tercera tarjeta ocupa el ancho  */
+  }
+}
