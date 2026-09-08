@@ -163,10 +163,9 @@ section{
 }
 
 .activo a{
-    background-color: var(--color-tarjeta);
     color: var(--color-secundario);
     padding: var(--esp-xs);
-    border-radius: var(--radio);
+    border-bottom: 3px solid var(--color-secundario);
 }
 
 /* fin CABECERA */
@@ -176,7 +175,7 @@ section{
     /* portada */
 
 #presentacion{
-    background: linear-gradient(45deg, var(--color-secundario), var(--color-secundario_alt));
+    /* background: linear-gradient(45deg, var(--color-secundario), var(--color-secundario_alt)); */
     padding: var(--esp-xl);
 }
 
