@@ -87,7 +87,7 @@
             </p>
         </section>
 
-        <!-- seccion destacado -->
+        <!-- Seccion destacado -->
 
         <section id="destacadoIndex" class="seccion seccion-alterna">
             <h2 class="seccion-titulo">Lo que nos hace especiales</h2>
@@ -119,7 +119,8 @@
             </div>
         </section>
 
-        <!-- seccion experiencia -->
+        <!-- Seccion experiencia -->
+        
         <section id="experienciaIndex" class="seccion">
             <h2 class="seccion-titulo">Nuestras Experiencias y Métodos</h2>
             <dl class="experienciaList">
@@ -145,45 +146,52 @@
             </dl>
         </section>
 
-        <!-- seccion guia -->
+        <!-- Seccion guia -->
+        
         <section id="cafeIdealIndex" class="seccion seccion-alterna">
             <h2 class="seccion-titulo">¿Cómo pedir tu café ideal?</h2>
-            <ol type="1" class="seccionLista">
-                <li>
+            <ul class="seccionGuia">
+                <li class="guiaFondo">
+                    <i class="fi fi-sr-mug-hot-alt"></i>
                     <strong>Elige tu base:</strong> 
                     Selecciona entre Espresso, Americano, Cappuccino, Latte o Cold Brew.
                 </li>
-                <li>
+                <li class="guiaFondo">
+                    <i class="fi fi-sr-milk"></i>
                     <strong>Selecciona tu leche preferida:</strong> 
                     Entera, deslactosada, de almendra, avena o soya.
                 </li>
-                <li>
+                <li class="guiaFondo">
+                    <i class="fi fi-sr-candy"></i>
                     <strong>Añade un toque de sabor (opcional):</strong> 
                     Jarabe de vainilla, caramelo, avellana o chocolate.
                 </li>
-                <li>
+                <li class="guiaFondo">
+                    <i class="fi fi-sr-thermometer-half"></i>
                     <strong>Personaliza la temperatura y el dulzor:</strong> 
                     Frío o caliente, y el nivel de endulzante a tu gusto.
                 </li>
-                <li>
+                <li class="guiaFondo">
+                    <i class="fi fi-sr-custard"></i>
                     <strong>Acompaña tu bebida:</strong> 
                     Elige una opción de nuestra vitrina de repostería fresca.
                 </li>
-            </ol>
+            </ul>
         </section>
 
-
+        <!-- Seccion menu -->
+        
         <section id="menuIndex" class="seccion">
             <h2 class="seccion-titulo">Destacados del Menú</h2>
-            <table>
-                <caption><b>Los Favoritos de la Casa</b></caption>
-                <thead>
+            <table class="tablaMenu">
+                <caption>Los Favoritos de la Casa</caption>
+                <thead class="tablaMenu-Cabecera">
                     <tr>
                         <th scope="col">Producto</th>
                         <th scope="col">Descripción</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="tablaMenu-Contenido">
                     <tr>
                         <th>Flat White de la Casa</th>
                         <td>Espresso doble con leche cremada a la perfección.</td>
@@ -201,10 +209,13 @@
                         <td>Pan de masa madre, aguacate de temporada y huevo pochado.</td>
                     </tr>
                 </tbody>
-
+                <tfoot class="tablaMenu-pie">
+                    <tr>
+                        <th colspan="2"> Promocion especial a estudiantes: Combo de Cafe y repostería 2x1</th>
+                    </tr>
+                </tfoot>
             </table>
         </section>
-        <br><br>
 
     </main>
 
@@ -221,22 +232,21 @@
         
             <div class="footInfo">
                 <h2>¿Que esperas?</h2>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quae a dolorem possimus dicta, odio praesentium, illum voluptatibus nostrum aut nobis tempore quod.
-                
-              </p>
+                <p>Vení y disfruta de un ambiente agradable con lo bueno de un Café, Abrimos de lunes a sabado de 7:00am a 8:00pm
+                </p>
             </div>
         
             <div class="footInfo">
                 <h2>Siguenos</h2>
                 <div class="footRedes_Contedor">
-                    <i class="fi fi-brands-tiktok-circle"></i>
-                    <i class="fi fi-brands-youtube"></i>
-                    <i class="fi fi-brands-instagram-circle"></i>
+                    <a href=""><i class="fi fi-brands-tiktok-circle"></i></a>
+                    <a href=""><i class="fi fi-brands-youtube"></i></a>
+                    <a href=""><i class="fi fi-brands-instagram-circle"></i></a>
                 </div>
             </div>
         </div>
         
-        <p><small>&copy; 2026 &middot; CafeTico &middot; Todos los derechos reservados</small></p>
+        <p class="footCopy"><small>&copy; 2026 &middot; CafeTico &middot; Todos los derechos reservados</small></p>
     </footer>
 </body>
 </html>

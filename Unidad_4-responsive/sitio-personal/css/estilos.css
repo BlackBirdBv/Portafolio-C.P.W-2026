@@ -13,7 +13,7 @@
     --color-texto-1: #463200;
     --color-texto-2: #c5c5c5;
     --color-texto-3: #8d8c8c;
-    --color-texto: #1F2428;
+    --color-texto: #1f1700;
     
     --tam-2xs: 1.0rem;
     --tam-1xs: 1.4rem;
@@ -92,26 +92,6 @@ header{
     width: 100%;
 }
 
-header nav ul{
-    text-align: center;
-}
-
-header nav ul li{
-    display: inline;
-}
-
-header nav ul li a{
-    color: white;
-    font-size: 20px;
-    padding: 0 10px;
-    text-decoration: none;
-    transition: 0.3s ease-in-out;
-}
-
-header nav ul li a:hover{
-    color: #da6900;
-}
-
 section{
     padding-top: var(--esp-lg);
     padding-bottom: var(--esp-xl);
@@ -160,22 +140,39 @@ section{
 .menu_opcion{
     font-weight: 700;
     color: var(--color-pricipal);
+    font-size: 20px;
+    padding: 0 10px;
+    text-decoration: none;
+    transition: 0.3s ease-in-out;
+}
+
+.menu_opcion a{
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.menu_opcion a:hover{
+    color: var(--color-secundario);
 }
 
 .activo a{
-    color: var(--color-secundario);
+    color: var(--color-boton);
     padding: var(--esp-xs);
-    border-bottom: 3px solid var(--color-secundario);
+    border-bottom: 3px solid var(--color-boton);
 }
 
 /* fin CABECERA */
 
-/* contenido */
+/* Contenido */
 
-    /* portada */
+    /* Portada */
 
 #presentacion{
-    /* background: linear-gradient(45deg, var(--color-secundario), var(--color-secundario_alt)); */
+    background-image: url(../resources/img/portada.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
     padding: var(--esp-xl);
 }
 
@@ -186,6 +183,7 @@ section{
     border-radius: var(--radio);
     padding: var(--esp-lg);
     text-align: center;
+    box-shadow: var(--sombra_2);
 }
 
 .presentacion-saludo{
@@ -196,12 +194,12 @@ section{
 }
 
 .presentacion-titulo{
-    color: var(--color-texto-1);
+    color: var(--color-tarjeta);
     font-weight: 600;
 }
 
 .presentacion-texto{
-    color: var(--color-texto-1);
+    color: var(--color-tarjeta);
     font-weight: 500;
     margin: 0 var(--esp-md) var(--esp-md);
 }
@@ -214,12 +212,17 @@ section{
 }
 
 .boton-principal{
-    background-color: var(--color-secundario);
-    color: var(--color-tarjeta);
     background-color: var(--color-boton);
+    color: var(--color-tarjeta);
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* seccion informacion */
+.boton-principal:hover{
+    background-color: var(--color-tarjeta);
+    color: var(--color-boton);
+}
+
+/* Seccion informacion */
 
 
 .seccion-titulo{
@@ -233,19 +236,7 @@ section{
     padding: var(--esp-md) var(--esp-lg);
 }
 
-/* seccion destacado */
-
-/* .destacadoList{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 4rem;
-}
-
-.destacadoList li{
-    font-size: var(--tam-xs);
-    max-width: 40rem;
-} */
+/* Seccion destacado */
 
 .destacadoCaontenido{
     display: grid;
@@ -263,7 +254,11 @@ section{
     flex-direction: column;
     align-items: center;
     text-align: center;
-    border: 1px solid var(--color-pricipal);
+    transition: transform 0.3s ease;
+}
+
+.destacadoTarjeta:hover{
+    transform: translateY(-1rem);
 }
 
 .destacadoTarjeta i{
@@ -281,7 +276,7 @@ section{
     color: var(--color-texto-3);
 }
 
-/* seccion experiencia */
+/* Seccion experiencia */
 
 .experienciaList{
     display: flex;
@@ -303,8 +298,66 @@ section{
     color: var(--color-texto-3);
 }
 
-/* seccion guia */
+/* Seccion guia */
 
+.seccionGuia{
+    list-style: none;
+}
+
+.guiaFondo{
+    background-color: var(--color-tarjeta);
+    font-size: var(--tam-md);
+    margin-top: 2rem;
+    padding: var(--esp-md);
+    border-radius: var(--radio);
+    box-shadow: var(--sombra_1);
+    transition: transform 0.3s ease;
+}
+
+.guiaFondo:hover{
+    transform: translateY(-1rem);
+}
+
+/* Seccion menu */
+
+.tablaMenu{
+    width: 100%;
+    font-size: var(--tam-sm);
+    margin-top: var(--esp-xs);
+    border-collapse: collapse;
+    box-shadow: var(--sombra_3);
+}
+
+.tablaMenu caption{
+    font-weight: 700;
+    font-size: var(--tam-md);
+}
+
+.tablaMenu tr th,
+.tablaMenu tr td{
+    text-align: start;
+    padding: var(--esp-sm);
+}
+
+.tablaMenu tr:nth-last-child(even){
+    background-color: var(--color-fondo);
+}
+
+.tablaMenu-Cabecera{
+    background-color: var(--color-pricipal);
+    color: var(--color-tarjeta);
+}
+
+.tablaMenu-Contenido{
+    background-color: var(--color-fondo-alt);
+    color: var(--color-texto-1);
+}
+
+.tablaMenu-pie tr th{
+    background-color: var(--color-fondo-pie);
+    color: var(--color-tarjeta);
+    text-align: center;
+}
 
 /* footer config */
 
@@ -314,7 +367,6 @@ section{
     flex-direction: column;
     gap: 3rem;
     width: 100%;
-    height: 200px;
     color: white;
     padding-top: var(--esp-lg);
 }
@@ -328,18 +380,45 @@ section{
     max-width: 40rem;
 }
 
+.footInfo h2{
+    margin-bottom: 1rem;
+}
 
+.footInfo address,
+.footInfo p{
+    font-size: var(--tam-1xs);
+}
 
-footer p{
-    background-color: var(--olive);
-    padding: 5px 0;
-    width: 100%;
+.footInfo address a{
+    color: white;
+    transition: color 0.3s ease;
+}
+.footInfo address a:hover{
+    color: var(--color-secundario);
+}
+
+.footRedes_Contedor{
+    display: flex;
+    justify-content: space-around;
+}
+
+.footRedes_Contedor a{
+    color: white;
+    transition: color 0.3s ease;
+}
+
+.footRedes_Contedor a:hover{color: var(--color-secundario);}
+.footRedes_Contedor a i{font-size: var(--tam-lg);}
+
+.footCopy{
+    background-color: var(--color-texto);
+    padding: var(--esp-xs);
     text-align: center;
 }
 
-footer p small{
+/* footer p small{
     color: white;
-}
+} */
 
 /* footer config fin */
 
